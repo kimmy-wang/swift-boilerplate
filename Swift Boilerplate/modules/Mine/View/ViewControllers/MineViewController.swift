@@ -1,29 +1,27 @@
 //
-//  HomeViewController.swift
+//  MineViewController.swift
 //  Swift Boilerplate
 //
-//  Created by Ying Wang on 2022/1/30.
+//  Created by Ying Wang on 2022/2/6.
 //
 
 import UIKit
 import RAMAnimatedTabBarController
 
-class HomeViewController: UIViewController {
+class MineViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     
-    
     // MARK: - Properties
-    var presenter: HomeViewToPresenterProtocol?
-    
-    // MARK: - Methods
+    var presenter: MineViewToPresenterProtocol?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.tabBarItem = RAMAnimatedTabBarItem()
-        self.tabBarItem.title = "Home"
-        self.tabBarItem.image = .icon(from: .TabHome, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
-        self.tabBarItem.selectedImage = .icon(from: .TabHomeSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
+        self.tabBarItem.title = "Mine"
+        self.tabBarItem.image = .icon(from: .TabMine, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
+        self.tabBarItem.selectedImage = .icon(from: .TabMineSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
 
         // Do any additional setup after loading the view.
         setUpTableView()
@@ -53,7 +51,7 @@ class HomeViewController: UIViewController {
 }
 
 // MARK: - UITableViewDataSource
-extension HomeViewController: UITableViewDataSource {
+extension MineViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter?.getNewsListCount() ?? 0
     }
@@ -71,10 +69,10 @@ extension HomeViewController: UITableViewDataSource {
 }
 
 // MARK: - UITableViewDelegate
-extension HomeViewController: UITableViewDelegate {}
+extension MineViewController: UITableViewDelegate {}
 
 // MARK: - HomePresenterToViewProtocol
-extension HomeViewController: HomePresenterToViewProtocol {
+extension MineViewController: MinePresenterToViewProtocol {
 
     func showNews() {
         tableView.reloadData()

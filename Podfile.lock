@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (5.5.0)
+  - RAMAnimatedTabBarController (5.2.0)
   - SnapKit (5.0.1)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.5.0)
+  - RAMAnimatedTabBarController (~> 5.2.0)
   - SnapKit (~> 5.0.1)
   - SwiftyJSON (~> 4.3.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - RAMAnimatedTabBarController
     - SnapKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  RAMAnimatedTabBarController: 6863a386e7ae2ab227cd60aa73ab8ff56cdacfdd
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 160d95a172a09896adf088e1b552e4e6f5b05bd4
+PODFILE CHECKSUM: 024b279e592dc1cde61138ef83e4e58572aa05d5
 
 COCOAPODS: 1.11.2

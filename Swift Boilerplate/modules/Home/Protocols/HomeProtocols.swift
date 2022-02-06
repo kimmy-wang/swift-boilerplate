@@ -8,24 +8,24 @@
 import Foundation
 import UIKit
 
-protocol HomePresenterToViewProtocol: class {
+protocol HomePresenterToViewProtocol: AnyObject {
     func showNews()
     func showError()
 }
 
-protocol HomeInteractorToPresenterProtocol: class {
+protocol HomeInteractorToPresenterProtocol: AnyObject {
     func liveNewsFetched()
     func liveNewsFetchedFailed()
 }
 
-protocol HomePresentorToInteractorProtocol: class {
+protocol HomePresentorToInteractorProtocol: AnyObject {
     var presenter: HomeInteractorToPresenterProtocol? { get set }
     var news: [HomeModel]? { get }
     
     func fetchLiveNews()
 }
 
-protocol HomeViewToPresenterProtocol: class {
+protocol HomeViewToPresenterProtocol: AnyObject {
     var view: HomePresenterToViewProtocol? { get set }
     var interactor: HomePresentorToInteractorProtocol? { get set }
     var router: HomePresenterToRouterProtocol? { get set }
@@ -35,6 +35,6 @@ protocol HomeViewToPresenterProtocol: class {
     func getNews(index: Int) -> HomeModel?
 }
 
-protocol HomePresenterToRouterProtocol: class {
+protocol HomePresenterToRouterProtocol: AnyObject {
     static func createModule() -> UIViewController
 }

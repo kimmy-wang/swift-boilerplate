@@ -23,6 +23,14 @@
 		2E3A2D0C27A6AA3E00855DDA /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D0B27A6AA3E00855DDA /* HomeInteractor.swift */; };
 		2E3A2D0F27A6AA8A00855DDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D0E27A6AA8A00855DDA /* Constants.swift */; };
 		2E3A2D1427A6BD9800855DDA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A2D1327A6BD9800855DDA /* .gitignore */; };
+		2E3A2D1D27AF9D4000855DDA /* MineProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D1C27AF9D4000855DDA /* MineProtocols.swift */; };
+		2E3A2D1F27AF9D8E00855DDA /* MineRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D1E27AF9D8E00855DDA /* MineRouter.swift */; };
+		2E3A2D2127AF9DFD00855DDA /* MineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2027AF9DFD00855DDA /* MineInteractor.swift */; };
+		2E3A2D2527AF9E4C00855DDA /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2327AF9E4C00855DDA /* MineViewController.swift */; };
+		2E3A2D2627AF9E4C00855DDA /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2427AF9E4C00855DDA /* MineViewController.xib */; };
+		2E3A2D2827AF9E6700855DDA /* MinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2727AF9E6700855DDA /* MinePresenter.swift */; };
+		2E3A2D2E27AFA90600855DDA /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2D27AFA90600855DDA /* iconfont.ttf */; };
+		2E3A2D3027AFAC5A00855DDA /* UIFont+IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2F27AFAC5A00855DDA /* UIFont+IconFont.swift */; };
 		F6867E3B54B67CBDA3BE0C0E /* Pods_Swift_Boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2980AB7F0518A9CB22B5C36B /* Pods_Swift_Boilerplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +57,14 @@
 		2E3A2D1027A6BC4E00855DDA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2E3A2D1127A6BC7100855DDA /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		2E3A2D1327A6BD9800855DDA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2E3A2D1C27AF9D4000855DDA /* MineProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineProtocols.swift; sourceTree = "<group>"; };
+		2E3A2D1E27AF9D8E00855DDA /* MineRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineRouter.swift; sourceTree = "<group>"; };
+		2E3A2D2027AF9DFD00855DDA /* MineInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineInteractor.swift; sourceTree = "<group>"; };
+		2E3A2D2327AF9E4C00855DDA /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		2E3A2D2427AF9E4C00855DDA /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
+		2E3A2D2727AF9E6700855DDA /* MinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinePresenter.swift; sourceTree = "<group>"; };
+		2E3A2D2D27AFA90600855DDA /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		2E3A2D2F27AFAC5A00855DDA /* UIFont+IconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+IconFont.swift"; sourceTree = "<group>"; };
 		F8A4732D30293601A8271324 /* Pods-Swift Boilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Boilerplate.release.xcconfig"; path = "Target Support Files/Pods-Swift Boilerplate/Pods-Swift Boilerplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,10 +112,10 @@
 		2E3A2CC927A698E100855DDA /* Swift Boilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				2E3A2D2C27AFA8DF00855DDA /* fonts */,
 				2E3A2D0D27A6AA6A00855DDA /* utils */,
 				2E3A2CDE27A69A2000855DDA /* modules */,
 				2E3A2CCA27A698E100855DDA /* AppDelegate.swift */,
-				2E3A2D0E27A6AA8A00855DDA /* Constants.swift */,
 				2E3A2CD027A698E100855DDA /* Main.storyboard */,
 				2E3A2CD327A698E300855DDA /* Assets.xcassets */,
 				2E3A2CD527A698E300855DDA /* LaunchScreen.storyboard */,
@@ -111,6 +127,7 @@
 		2E3A2CDE27A69A2000855DDA /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				2E3A2D1527AF9B9C00855DDA /* Mine */,
 				2E3A2CDF27A69F8100855DDA /* Home */,
 			);
 			path = modules;
@@ -200,8 +217,87 @@
 		2E3A2D0D27A6AA6A00855DDA /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				2E3A2D0E27A6AA8A00855DDA /* Constants.swift */,
+				2E3A2D2F27AFAC5A00855DDA /* UIFont+IconFont.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		2E3A2D1527AF9B9C00855DDA /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A2D1B27AF9BF200855DDA /* Protocols */,
+				2E3A2D1A27AF9BE300855DDA /* Presenter */,
+				2E3A2D1927AF9BD800855DDA /* Interactor */,
+				2E3A2D1827AF9BC900855DDA /* Route */,
+				2E3A2D1727AF9BBE00855DDA /* Entity */,
+				2E3A2D1627AF9BB700855DDA /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		2E3A2D1627AF9BB700855DDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A2D2227AF9E0800855DDA /* ViewControllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E3A2D1727AF9BBE00855DDA /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2E3A2D1827AF9BC900855DDA /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A2D1E27AF9D8E00855DDA /* MineRouter.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		2E3A2D1927AF9BD800855DDA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A2D2027AF9DFD00855DDA /* MineInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2E3A2D1A27AF9BE300855DDA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A2D2727AF9E6700855DDA /* MinePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2E3A2D1B27AF9BF200855DDA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A2D1C27AF9D4000855DDA /* MineProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2E3A2D2227AF9E0800855DDA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A2D2327AF9E4C00855DDA /* MineViewController.swift */,
+				2E3A2D2427AF9E4C00855DDA /* MineViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2E3A2D2C27AFA8DF00855DDA /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A2D2D27AFA90600855DDA /* iconfont.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		A22BB8670E43E0589DF64E0F /* Pods */ = {
@@ -273,7 +369,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3A2D2E27AFA90600855DDA /* iconfont.ttf in Resources */,
 				2E3A2CD727A698E300855DDA /* LaunchScreen.storyboard in Resources */,
+				2E3A2D2627AF9E4C00855DDA /* MineViewController.xib in Resources */,
 				2E3A2CD427A698E300855DDA /* Assets.xcassets in Resources */,
 				2E3A2CD227A698E100855DDA /* Main.storyboard in Resources */,
 				2E3A2D0A27A6A9A500855DDA /* HomeTableViewCell.xib in Resources */,
@@ -332,13 +430,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E3A2CF427A6A1F300855DDA /* HomeProtocols.swift in Sources */,
+				2E3A2D1D27AF9D4000855DDA /* MineProtocols.swift in Sources */,
 				2E3A2CF827A6A2A000855DDA /* HomeResponse.swift in Sources */,
+				2E3A2D2527AF9E4C00855DDA /* MineViewController.swift in Sources */,
 				2E3A2CCB27A698E100855DDA /* AppDelegate.swift in Sources */,
+				2E3A2D3027AFAC5A00855DDA /* UIFont+IconFont.swift in Sources */,
 				2E3A2CFC27A6A33B00855DDA /* HomePresenter.swift in Sources */,
+				2E3A2D1F27AF9D8E00855DDA /* MineRouter.swift in Sources */,
 				2E3A2CF627A6A26E00855DDA /* HomeModel.swift in Sources */,
+				2E3A2D2827AF9E6700855DDA /* MinePresenter.swift in Sources */,
 				2E3A2D0F27A6AA8A00855DDA /* Constants.swift in Sources */,
 				2E3A2D0027A6A4D500855DDA /* HomeViewController.swift in Sources */,
 				2E3A2D0C27A6AA3E00855DDA /* HomeInteractor.swift in Sources */,
+				2E3A2D2127AF9DFD00855DDA /* MineInteractor.swift in Sources */,
 				2E3A2D0927A6A9A500855DDA /* HomeTableViewCell.swift in Sources */,
 				2E3A2CFA27A6A2F400855DDA /* HomeRouter.swift in Sources */,
 			);

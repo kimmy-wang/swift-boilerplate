@@ -9,5 +9,6 @@ target 'Swift Boilerplate' do
   pod 'SnapKit', '~> 5.0.1'
   pod 'Alamofire', '~> 5.5.0'
   pod 'SwiftyJSON', '~> 4.3.0'
-
+  pod 'RAMAnimatedTabBarController', '~> 5.2.0'
+  
 end
