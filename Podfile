@@ -12,6 +12,7 @@ target 'Swift Boilerplate' do
   pod 'RAMAnimatedTabBarController', '~> 5.2.0'
   pod 'RxSwift', '~> 6.5.0'
   pod 'RxCocoa', '~> 6.5.0'
+  pod 'Action', '~> 5.0.0'
   pod 'SkeletonView', '~> 1.29.2'
   
 end
