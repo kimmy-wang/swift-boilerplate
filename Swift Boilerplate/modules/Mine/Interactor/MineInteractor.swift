@@ -16,7 +16,7 @@ class MineInteractor: MinePresentorToInteractorProtocol {
     
     // MARK: - Methods
     func fetchLiveNews() {
-        AF.request(Constants.URL).response { response in
+        AF.request(Constants.MINE_URL).response { response in
             if(response.response?.statusCode == 200){
                 guard let data = response.data else { return }
                 do {
