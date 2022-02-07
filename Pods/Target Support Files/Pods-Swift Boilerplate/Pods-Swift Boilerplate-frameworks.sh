@@ -178,12 +178,20 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
 fi

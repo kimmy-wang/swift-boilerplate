@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 class HomeViewController: UIViewController {
     
@@ -41,6 +42,7 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
+        tableView.isSkeletonable = true
         
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: .main), forCellReuseIdentifier: "HomeTableViewCell")
     }
