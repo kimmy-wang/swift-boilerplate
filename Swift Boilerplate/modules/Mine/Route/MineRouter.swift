@@ -17,9 +17,6 @@ class MineRouter: MinePresenterToRouterProtocol{
         
         let view = MineViewController()
 //        view.tabBarItem = RAMAnimatedTabBarItem()
-        view.tabBarItem.title = "Mine"
-        view.tabBarItem.image = .icon(from: .TabMine, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
-        view.tabBarItem.selectedImage = .icon(from: .TabMineSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
         
         let presenter: MineViewToPresenterProtocol & MineInteractorToPresenterProtocol = MinePresenter()
         let interactor: MinePresentorToInteractorProtocol = MineInteractor()

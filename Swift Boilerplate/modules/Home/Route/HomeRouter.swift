@@ -17,9 +17,6 @@ class HomeRouter: HomePresenterToRouterProtocol{
         
         let view = HomeViewController()
 //        view.tabBarItem = RAMAnimatedTabBarItem()
-        view.tabBarItem.title = "Home"
-        view.tabBarItem.image = .icon(from: .TabHome, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
-        view.tabBarItem.selectedImage = .icon(from: .TabHomeSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
         
         let presenter: HomeViewToPresenterProtocol & HomeInteractorToPresenterProtocol = HomePresenter()
         let interactor: HomePresentorToInteractorProtocol = HomeInteractor()

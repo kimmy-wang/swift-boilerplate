@@ -17,6 +17,17 @@ class HomeViewController: UIViewController {
     var presenter: HomeViewToPresenterProtocol?
     
     // MARK: - Methods
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        self.tabBarItem.title = "Home"
+        self.tabBarItem.image = .icon(from: .TabHome, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
+        self.tabBarItem.selectedImage = .icon(from: .TabHomeSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
