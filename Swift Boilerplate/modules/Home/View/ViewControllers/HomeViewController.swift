@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import RAMAnimatedTabBarController
 
 class HomeViewController: UIViewController {
     
@@ -20,10 +19,6 @@ class HomeViewController: UIViewController {
     // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.tabBarItem = RAMAnimatedTabBarItem()
-        self.tabBarItem.title = "Home"
-        self.tabBarItem.image = .icon(from: .TabHome, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
-        self.tabBarItem.selectedImage = .icon(from: .TabHomeSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
 
         // Do any additional setup after loading the view.
         setUpTableView()

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import RAMAnimatedTabBarController
 
 class MineViewController: UIViewController {
     
@@ -18,10 +17,6 @@ class MineViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.tabBarItem = RAMAnimatedTabBarItem()
-        self.tabBarItem.title = "Mine"
-        self.tabBarItem.image = .icon(from: .TabMine, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
-        self.tabBarItem.selectedImage = .icon(from: .TabMineSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
 
         // Do any additional setup after loading the view.
         setUpTableView()
