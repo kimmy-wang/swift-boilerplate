@@ -30,6 +30,9 @@ class HomePresenter: HomeViewToPresenterProtocol {
 
 // MARK: - HomeInteractorToPresenterProtocol
 extension HomePresenter: HomeInteractorToPresenterProtocol {
+    func liveNewsFetching() {
+        view?.showSkeleton()
+    }
     
     func liveNewsFetched() {
         view?.showNews()

@@ -16,6 +16,7 @@ class HomeInteractor: HomePresentorToInteractorProtocol {
     
     // MARK: - Methods
     func fetchLiveNews() {
+        self.presenter?.liveNewsFetching()
         AF.request(Constants.URL).response { response in
             if(response.response?.statusCode == 200){
                 guard let data = response.data else { return }

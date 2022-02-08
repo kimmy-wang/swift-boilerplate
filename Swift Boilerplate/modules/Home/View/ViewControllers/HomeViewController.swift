@@ -83,12 +83,18 @@ extension HomeViewController: UITableViewDelegate {}
 
 // MARK: - HomePresenterToViewProtocol
 extension HomeViewController: HomePresenterToViewProtocol {
+    
+    func showSkeleton() {
+        tableView.showAnimatedSkeleton()
+    }
 
     func showNews() {
+        tableView.hideSkeleton()
         tableView.reloadData()
     }
     
     func showError() {
+        tableView.hideSkeleton()
         let alert = UIAlertController(title: "Alert", message: "Problem Fetching News", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)

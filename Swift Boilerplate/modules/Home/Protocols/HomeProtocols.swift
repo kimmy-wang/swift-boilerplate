@@ -9,11 +9,13 @@ import Foundation
 import UIKit
 
 protocol HomePresenterToViewProtocol: AnyObject {
+    func showSkeleton()
     func showNews()
     func showError()
 }
 
 protocol HomeInteractorToPresenterProtocol: AnyObject {
+    func liveNewsFetching()
     func liveNewsFetched()
     func liveNewsFetchedFailed()
 }
