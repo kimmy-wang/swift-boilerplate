@@ -29,6 +29,11 @@ class HomeViewController: UIViewController {
         super.init(coder: coder)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        view.showAnimatedSkeleton()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -60,8 +65,8 @@ class HomeViewController: UIViewController {
 
 }
 
-// MARK: - UITableViewDataSource
-extension HomeViewController: UITableViewDataSource {
+// MARK: - SkeletonTableViewDataSource
+extension HomeViewController: SkeletonTableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter?.getNewsListCount() ?? 0
     }
@@ -76,6 +81,15 @@ extension HomeViewController: UITableViewDataSource {
         cell?.setCell(title: title, author: author, description: description)
         return cell ?? UITableViewCell()
     }
+    
+    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
+        return "HomeTableViewCell"
+    }
+    
+    func collectionSkeletonView(_ skeletonView: UITableView, skeletonCellForRowAt indexPath: IndexPath) -> UITableViewCell? {
+        let cell = skeletonView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as? HomeTableViewCell
+        return cell
+    }
 }
 
 // MARK: - UITableViewDelegate
@@ -85,7 +99,7 @@ extension HomeViewController: UITableViewDelegate {}
 extension HomeViewController: HomePresenterToViewProtocol {
     
     func showSkeleton() {
-        tableView.showAnimatedSkeleton()
+        tableView.showAnimatedSkeleton(usingColor: .red)
     }
 
     func showNews() {
