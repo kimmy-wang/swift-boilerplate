@@ -17,7 +17,7 @@ class MineViewController: UIViewController {
 
     // MARK: - Methods
     init() {
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: "MineViewController", bundle: .main)
         self.tabBarItem.title = "Mine"
         self.tabBarItem.image = .icon(from: .TabMine, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
         self.tabBarItem.selectedImage = .icon(from: .TabMineSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22)

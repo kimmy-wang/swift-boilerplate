@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
     
     // MARK: - Methods
     init() {
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: "HomeViewController", bundle: .main)
         self.tabBarItem.title = "Home"
         self.tabBarItem.image = .icon(from: .TabHome, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
         self.tabBarItem.selectedImage = .icon(from: .TabHomeSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
