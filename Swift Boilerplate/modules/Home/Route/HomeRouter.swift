@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import RAMAnimatedTabBarController
 
 class HomeRouter: HomePresenterToRouterProtocol{
     
@@ -16,7 +15,6 @@ class HomeRouter: HomePresenterToRouterProtocol{
     class func createModule() -> UIViewController {
         
         let view = HomeViewController()
-//        view.tabBarItem = RAMAnimatedTabBarItem()
         
         let presenter: HomeViewToPresenterProtocol & HomeInteractorToPresenterProtocol = HomePresenter()
         let interactor: HomePresentorToInteractorProtocol = HomeInteractor()

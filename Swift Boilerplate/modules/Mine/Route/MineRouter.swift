@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import RAMAnimatedTabBarController
 
 class MineRouter: MinePresenterToRouterProtocol{
     
@@ -16,7 +15,6 @@ class MineRouter: MinePresenterToRouterProtocol{
     class func createModule() -> UIViewController {
         
         let view = MineViewController()
-//        view.tabBarItem = RAMAnimatedTabBarItem()
         
         let presenter: MineViewToPresenterProtocol & MineInteractorToPresenterProtocol = MinePresenter()
         let interactor: MinePresentorToInteractorProtocol = MineInteractor()

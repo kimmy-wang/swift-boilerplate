@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let news = HomeRouter.createModule()
         let mine = MineRouter.createModule()
-        let tabBarController = UITabBarController()
+        let tabBarController = RAMAnimatedTabBarController()
         tabBarController.viewControllers = [news, mine]
         tabBarController.delegate = self
         // Override point for customization after application launch.

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RAMAnimatedTabBarController
 
 class MineViewController: UIViewController {
     
@@ -18,9 +19,9 @@ class MineViewController: UIViewController {
     // MARK: - Methods
     init() {
         super.init(nibName: "MineViewController", bundle: .main)
-        self.tabBarItem.title = "Mine"
-        self.tabBarItem.image = .icon(from: .TabMine, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
-        self.tabBarItem.selectedImage = .icon(from: .TabMineSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
+        let tabBarItem = RAMAnimatedTabBarItem(title: "Mine", image: .icon(from: .TabMine, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22), selectedImage: .icon(from: .TabMineSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22))
+        tabBarItem.animation = RAMBounceAnimation()
+        self.tabBarItem = tabBarItem
     }
     
     required init?(coder: NSCoder) {

@@ -7,6 +7,7 @@
 
 import UIKit
 import SkeletonView
+import RAMAnimatedTabBarController
 
 class HomeViewController: UIViewController {
     
@@ -20,9 +21,9 @@ class HomeViewController: UIViewController {
     // MARK: - Methods
     init() {
         super.init(nibName: "HomeViewController", bundle: .main)
-        self.tabBarItem.title = "Home"
-        self.tabBarItem.image = .icon(from: .TabHome, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
-        self.tabBarItem.selectedImage = .icon(from: .TabHomeSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22)
+        let tabBarItem = RAMAnimatedTabBarItem(title: "Home", image: .icon(from: .TabHome, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22), selectedImage: .icon(from: .TabHomeSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22))
+        tabBarItem.animation = RAMBounceAnimation()
+        self.tabBarItem = tabBarItem
     }
     
     required init?(coder: NSCoder) {
