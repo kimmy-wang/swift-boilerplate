@@ -31,6 +31,7 @@
 		2E3A2D2827AF9E6700855DDA /* MinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2727AF9E6700855DDA /* MinePresenter.swift */; };
 		2E3A2D2E27AFA90600855DDA /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2D27AFA90600855DDA /* iconfont.ttf */; };
 		2E3A2D3027AFAC5A00855DDA /* UIFont+IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2F27AFAC5A00855DDA /* UIFont+IconFont.swift */; };
+		2E406B9427B3B04300C9C0AE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E406B9327B3B04300C9C0AE /* Settings.bundle */; };
 		F6867E3B54B67CBDA3BE0C0E /* Pods_Swift_Boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2980AB7F0518A9CB22B5C36B /* Pods_Swift_Boilerplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		2E3A2D2727AF9E6700855DDA /* MinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinePresenter.swift; sourceTree = "<group>"; };
 		2E3A2D2D27AFA90600855DDA /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		2E3A2D2F27AFAC5A00855DDA /* UIFont+IconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+IconFont.swift"; sourceTree = "<group>"; };
+		2E406B9327B3B04300C9C0AE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F8A4732D30293601A8271324 /* Pods-Swift Boilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Boilerplate.release.xcconfig"; path = "Target Support Files/Pods-Swift Boilerplate/Pods-Swift Boilerplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 		2E3A2CC927A698E100855DDA /* Swift Boilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				2E406B9327B3B04300C9C0AE /* Settings.bundle */,
 				2E3A2D2C27AFA8DF00855DDA /* fonts */,
 				2E3A2D0D27A6AA6A00855DDA /* utils */,
 				2E3A2CDE27A69A2000855DDA /* modules */,
@@ -317,6 +320,7 @@
 			buildConfigurationList = 2E3A2CDB27A698E300855DDA /* Build configuration list for PBXNativeTarget "Swift Boilerplate" */;
 			buildPhases = (
 				64CE039729CE75975B7DFB70 /* [CP] Check Pods Manifest.lock */,
+				2E406B8E27B3AAD300C9C0AE /* LicensePlist */,
 				2E3A2CC327A698E100855DDA /* Sources */,
 				2E3A2CC427A698E100855DDA /* Frameworks */,
 				2E3A2CC527A698E100855DDA /* Resources */,
@@ -376,6 +380,7 @@
 				2E3A2CD227A698E100855DDA /* Main.storyboard in Resources */,
 				2E3A2D0A27A6A9A500855DDA /* HomeTableViewCell.xib in Resources */,
 				2E3A2D1427A6BD9800855DDA /* .gitignore in Resources */,
+				2E406B9427B3B04300C9C0AE /* Settings.bundle in Resources */,
 				2E3A2D0127A6A4D500855DDA /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +388,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2E406B8E27B3AAD300C9C0AE /* LicensePlist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = LicensePlist;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ $CONFIGURATION = \"Debug\" ]; then\n ${PODS_ROOT}/LicensePlist/license-plist --output-path Swift\\ Boilerplate/Settings.bundle --add-version-numbers\nfi\n";
+		};
 		64CE039729CE75975B7DFB70 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -597,6 +620,7 @@
 				DEVELOPMENT_TEAM = 43V9N6VW8L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Swift Boilerplate/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Swift Boilerplate";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -628,6 +652,7 @@
 				DEVELOPMENT_TEAM = 43V9N6VW8L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Swift Boilerplate/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Swift Boilerplate";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
