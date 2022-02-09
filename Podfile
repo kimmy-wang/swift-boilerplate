@@ -14,6 +14,7 @@ target 'Swift Boilerplate' do
   pod 'RxCocoa', '~> 6.5.0'
   pod 'Action', '~> 5.0.0'
   pod 'SkeletonView', '~> 1.29.2'
+  pod 'NVActivityIndicatorView', '~> 5.1.1'
   pod 'LicensePlist', '~> 3.17.0'
 
 end

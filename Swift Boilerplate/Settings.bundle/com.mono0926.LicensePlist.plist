@@ -36,6 +36,14 @@
 		</dict>
 		<dict>
 			<key>File</key>
+			<string>com.mono0926.LicensePlist/NVActivityIndicatorView</string>
+			<key>Title</key>
+			<string>NVActivityIndicatorView (5.1.1)</string>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+		</dict>
+		<dict>
+			<key>File</key>
 			<string>com.mono0926.LicensePlist/RAMAnimatedTabBarController</string>
 			<key>Title</key>
 			<string>RAMAnimatedTabBarController (5.2.0)</string>
