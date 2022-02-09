@@ -17,6 +17,7 @@ class HomeViewController: UIViewController {
     
     // MARK: - Properties
     var presenter: HomeViewToPresenterProtocol?
+    let refreshControl = UIRefreshControl()
     
     // MARK: - Methods
     init() {
@@ -39,9 +40,16 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setUpRefreshControl()
+        
         setUpTableView()
         
         presenter?.updateView()
+    }
+    
+    private func setUpRefreshControl() {
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
     }
     
     private func setUpTableView() {
@@ -49,8 +57,13 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.tableFooterView = UIView()
         tableView.isSkeletonable = true
+        tableView.refreshControl = refreshControl
         
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: .main), forCellReuseIdentifier: "HomeTableViewCell")
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+       // Code to refresh table view
     }
 
 
