@@ -319,8 +319,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E3A2CDB27A698E300855DDA /* Build configuration list for PBXNativeTarget "Swift Boilerplate" */;
 			buildPhases = (
-				64CE039729CE75975B7DFB70 /* [CP] Check Pods Manifest.lock */,
 				2E406B8E27B3AAD300C9C0AE /* LicensePlist */,
+				64CE039729CE75975B7DFB70 /* [CP] Check Pods Manifest.lock */,
 				2E3A2CC327A698E100855DDA /* Sources */,
 				2E3A2CC427A698E100855DDA /* Frameworks */,
 				2E3A2CC527A698E100855DDA /* Resources */,
