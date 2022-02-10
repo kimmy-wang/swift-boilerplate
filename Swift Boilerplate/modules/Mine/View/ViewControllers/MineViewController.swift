@@ -19,10 +19,11 @@ class MineViewController: UIViewController {
     // MARK: - Methods
     init() {
         super.init(nibName: "MineViewController", bundle: .main)
-        let tabBarItem = RAMAnimatedTabBarItem(title: "Mine", image: .icon(from: .TabMine, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22), selectedImage: .icon(from: .TabMineSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22))
+        let mineTitle = NSLocalizedString("mine", comment: "")
+        let tabBarItem = RAMAnimatedTabBarItem(title: mineTitle, image: .icon(from: .TabMine, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22), selectedImage: .icon(from: .TabMineSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22))
         tabBarItem.animation = RAMBounceAnimation()
         self.tabBarItem = tabBarItem
-        self.title = "Mine"
+        self.title = mineTitle
     }
     
     required init?(coder: NSCoder) {
