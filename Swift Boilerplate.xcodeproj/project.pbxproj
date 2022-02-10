@@ -32,6 +32,7 @@
 		2E3A2D2E27AFA90600855DDA /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2D27AFA90600855DDA /* iconfont.ttf */; };
 		2E3A2D3027AFAC5A00855DDA /* UIFont+IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2F27AFAC5A00855DDA /* UIFont+IconFont.swift */; };
 		2E406B9427B3B04300C9C0AE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E406B9327B3B04300C9C0AE /* Settings.bundle */; };
+		2E406B9827B4AA3B00C9C0AE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E406B9727B4AA3B00C9C0AE /* BaseViewController.swift */; };
 		F6867E3B54B67CBDA3BE0C0E /* Pods_Swift_Boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2980AB7F0518A9CB22B5C36B /* Pods_Swift_Boilerplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		2E3A2D2D27AFA90600855DDA /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		2E3A2D2F27AFAC5A00855DDA /* UIFont+IconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+IconFont.swift"; sourceTree = "<group>"; };
 		2E406B9327B3B04300C9C0AE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		2E406B9727B4AA3B00C9C0AE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F8A4732D30293601A8271324 /* Pods-Swift Boilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Boilerplate.release.xcconfig"; path = "Target Support Files/Pods-Swift Boilerplate/Pods-Swift Boilerplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 		2E3A2CDE27A69A2000855DDA /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				2E406B9527B4A9FF00C9C0AE /* Common */,
 				2E3A2D1527AF9B9C00855DDA /* Mine */,
 				2E3A2CDF27A69F8100855DDA /* Home */,
 			);
@@ -303,6 +306,22 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		2E406B9527B4A9FF00C9C0AE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2E406B9627B4AA0C00C9C0AE /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2E406B9627B4AA0C00C9C0AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E406B9727B4AA3B00C9C0AE /* BaseViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A22BB8670E43E0589DF64E0F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +478,7 @@
 				2E3A2CCB27A698E100855DDA /* AppDelegate.swift in Sources */,
 				2E3A2D3027AFAC5A00855DDA /* UIFont+IconFont.swift in Sources */,
 				2E3A2CFC27A6A33B00855DDA /* HomePresenter.swift in Sources */,
+				2E406B9827B4AA3B00C9C0AE /* BaseViewController.swift in Sources */,
 				2E3A2D1F27AF9D8E00855DDA /* MineRouter.swift in Sources */,
 				2E3A2CF627A6A26E00855DDA /* HomeModel.swift in Sources */,
 				2E3A2D2827AF9E6700855DDA /* MinePresenter.swift in Sources */,

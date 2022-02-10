@@ -14,11 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         let news = HomeRouter.createModule()
         let mine = MineRouter.createModule()
+        
+        let newsNav = UINavigationController(rootViewController: news)
+        let mineNav = UINavigationController(rootViewController: mine)
+        
         let tabBarController = RAMAnimatedTabBarController()
-        tabBarController.viewControllers = [news, mine]
+        tabBarController.viewControllers = [newsNav, mineNav]
         tabBarController.delegate = self
+        
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = tabBarController
