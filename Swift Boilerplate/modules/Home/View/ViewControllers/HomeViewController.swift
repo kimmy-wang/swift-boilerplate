@@ -18,13 +18,14 @@ class HomeViewController: UIViewController {
     // MARK: - Properties
     var presenter: HomeViewToPresenterProtocol?
     let refreshControl = UIRefreshControl()
-    
+
     // MARK: - Methods
     init() {
         super.init(nibName: "HomeViewController", bundle: .main)
         let tabBarItem = RAMAnimatedTabBarItem(title: "Home", image: .icon(from: .TabHome, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22), selectedImage: .icon(from: .TabHomeSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22))
         tabBarItem.animation = RAMBounceAnimation()
         self.tabBarItem = tabBarItem
+        self.title = "Home"
     }
     
     required init?(coder: NSCoder) {

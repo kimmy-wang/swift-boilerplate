@@ -22,6 +22,7 @@ class MineViewController: UIViewController {
         let tabBarItem = RAMAnimatedTabBarItem(title: "Mine", image: .icon(from: .TabMine, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22), selectedImage: .icon(from: .TabMineSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22))
         tabBarItem.animation = RAMBounceAnimation()
         self.tabBarItem = tabBarItem
+        self.title = "Mine"
     }
     
     required init?(coder: NSCoder) {
