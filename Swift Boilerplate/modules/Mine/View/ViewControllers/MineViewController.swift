@@ -24,6 +24,7 @@ class MineViewController: UIViewController {
         tabBarItem.animation = RAMBounceAnimation()
         self.tabBarItem = tabBarItem
         self.title = mineTitle
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Setting", style: .plain, target: self, action: #selector(openSeeting))
     }
     
     required init?(coder: NSCoder) {
@@ -45,6 +46,11 @@ class MineViewController: UIViewController {
         tableView.tableFooterView = UIView()
         
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: .main), forCellReuseIdentifier: "HomeTableViewCell")
+    }
+    
+    @objc func openSeeting() {
+        let url = URL(string: UIApplication.openSettingsURLString)!
+        UIApplication.shared.open(url)
     }
 
 
