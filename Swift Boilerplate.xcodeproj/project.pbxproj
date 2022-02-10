@@ -247,7 +247,6 @@
 				2E3A2D1A27AF9BE300855DDA /* Presenter */,
 				2E3A2D1927AF9BD800855DDA /* Interactor */,
 				2E3A2D1827AF9BC900855DDA /* Route */,
-				2E3A2D1727AF9BBE00855DDA /* Entity */,
 				2E3A2D1627AF9BB700855DDA /* View */,
 			);
 			path = Mine;
@@ -259,13 +258,6 @@
 				2E3A2D2227AF9E0800855DDA /* ViewControllers */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		2E3A2D1727AF9BBE00855DDA /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		2E3A2D1827AF9BC900855DDA /* Route */ = {
