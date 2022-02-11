@@ -21,6 +21,7 @@ target 'Swift Boilerplate' do
   pod 'Instructions', '~> 2.1.1'
   pod 'QuickTableViewController', '~> 1.3.1'
   pod 'lottie-ios', '~> 3.2.3'
+  pod 'SwiftTheme', '~> 0.6.4'
   pod 'SwiftLint'
 
 end

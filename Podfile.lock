@@ -25,6 +25,7 @@ PODS:
   - SkeletonView (1.29.2)
   - SnapKit (5.0.1)
   - SwiftLint (0.46.2)
+  - SwiftTheme (0.6.4)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
@@ -43,6 +44,7 @@ DEPENDENCIES:
   - SkeletonView (~> 1.29.2)
   - SnapKit (~> 5.0.1)
   - SwiftLint
+  - SwiftTheme (~> 0.6.4)
   - SwiftyJSON (~> 4.3.0)
 
 SPEC REPOS:
@@ -63,6 +65,7 @@ SPEC REPOS:
     - SkeletonView
     - SnapKit
     - SwiftLint
+    - SwiftTheme
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -82,8 +85,9 @@ SPEC CHECKSUMS:
   SkeletonView: 915a80ecc2b6421ab7ac0f0212321c0cc1406472
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftLint: 6bc52a21f0fd44cab9aa2dc8e534fb9f5e3ec507
+  SwiftTheme: 007cbaf1f9e171caf6448a4657533e54c682b285
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: f201b030918df776232775d237c93ae243c379ec
+PODFILE CHECKSUM: bc8b5a8b177d0cb1d7e03d759cfd2c668a13a2a5
 
 COCOAPODS: 1.11.2

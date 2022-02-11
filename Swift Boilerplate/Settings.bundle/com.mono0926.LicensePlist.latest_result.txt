@@ -67,6 +67,10 @@ name: SwiftLint, nameSpecified:
 body: The MIT License (MIT…
 version: 0.46.2
 
+name: SwiftTheme, nameSpecified: 
+body: The MIT License (MIT…
+version: 0.6.4
+
 name: SwiftyJSON, nameSpecified: 
 body: The MIT License (MIT…
 version: 4.3.0
