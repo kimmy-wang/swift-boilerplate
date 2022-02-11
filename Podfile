@@ -17,5 +17,10 @@ target 'Swift Boilerplate' do
   pod 'SkeletonView', '~> 1.29.2'
   pod 'NVActivityIndicatorView', '~> 5.1.1'
   pod 'LicensePlist', '~> 3.17.0'
+  pod 'DeviceKit', '~> 4.5.2'
+  pod 'Instructions', '~> 2.1.1'
+  pod 'QuickTableViewController', '~> 1.3.1'
+  pod 'lottie-ios', '~> 3.2.3'
+  pod 'SwiftLint'
 
 end

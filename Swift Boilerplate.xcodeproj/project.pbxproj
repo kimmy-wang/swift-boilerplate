@@ -29,11 +29,13 @@
 		2E3A2D2527AF9E4C00855DDA /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2327AF9E4C00855DDA /* MineViewController.swift */; };
 		2E3A2D2627AF9E4C00855DDA /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2427AF9E4C00855DDA /* MineViewController.xib */; };
 		2E3A2D2827AF9E6700855DDA /* MinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2727AF9E6700855DDA /* MinePresenter.swift */; };
-		2E3A2D2E27AFA90600855DDA /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2D27AFA90600855DDA /* iconfont.ttf */; };
 		2E3A2D3027AFAC5A00855DDA /* UIFont+IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2F27AFAC5A00855DDA /* UIFont+IconFont.swift */; };
 		2E3A2D3B27B5388F00855DDA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A2D3D27B5388F00855DDA /* Localizable.strings */; };
 		2E406B9427B3B04300C9C0AE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E406B9327B3B04300C9C0AE /* Settings.bundle */; };
 		2E406B9827B4AA3B00C9C0AE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E406B9727B4AA3B00C9C0AE /* BaseViewController.swift */; };
+		2E9790FC27B6889200935E31 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E9790FB27B6889200935E31 /* iconfont.ttf */; };
+		2E9790FE27B68EBB00935E31 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9790FD27B68EBB00935E31 /* SettingsViewController.swift */; };
+		3898C4A58AE34C231C8B34ED /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3898C6F984641474F30FE787 /* .swiftlint.yml */; };
 		F6867E3B54B67CBDA3BE0C0E /* Pods_Swift_Boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2980AB7F0518A9CB22B5C36B /* Pods_Swift_Boilerplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +68,6 @@
 		2E3A2D2327AF9E4C00855DDA /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		2E3A2D2427AF9E4C00855DDA /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 		2E3A2D2727AF9E6700855DDA /* MinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinePresenter.swift; sourceTree = "<group>"; };
-		2E3A2D2D27AFA90600855DDA /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		2E3A2D2F27AFAC5A00855DDA /* UIFont+IconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+IconFont.swift"; sourceTree = "<group>"; };
 		2E3A2D3527B5369200855DDA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		2E3A2D3627B5369300855DDA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -79,6 +80,9 @@
 		2E3A2D4327B538B300855DDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2E406B9327B3B04300C9C0AE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2E406B9727B4AA3B00C9C0AE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2E9790FB27B6889200935E31 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		2E9790FD27B68EBB00935E31 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3898C6F984641474F30FE787 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		F8A4732D30293601A8271324 /* Pods-Swift Boilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Boilerplate.release.xcconfig"; path = "Target Support Files/Pods-Swift Boilerplate/Pods-Swift Boilerplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +116,7 @@
 				2E3A2CC827A698E100855DDA /* Products */,
 				A22BB8670E43E0589DF64E0F /* Pods */,
 				1C29EBB9535973BB755667A0 /* Frameworks */,
+				3898C6F984641474F30FE787 /* .swiftlint.yml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -297,6 +302,7 @@
 			children = (
 				2E3A2D2327AF9E4C00855DDA /* MineViewController.swift */,
 				2E3A2D2427AF9E4C00855DDA /* MineViewController.xib */,
+				2E9790FD27B68EBB00935E31 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -304,7 +310,7 @@
 		2E3A2D2C27AFA8DF00855DDA /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				2E3A2D2D27AFA90600855DDA /* iconfont.ttf */,
+				2E9790FB27B6889200935E31 /* iconfont.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -347,6 +353,7 @@
 				2E3A2CC427A698E100855DDA /* Frameworks */,
 				2E3A2CC527A698E100855DDA /* Resources */,
 				D2EEA69E3DD66246737DBEFE /* [CP] Embed Pods Frameworks */,
+				2E9790FF27B690CF00935E31 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -397,7 +404,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E3A2D2E27AFA90600855DDA /* iconfont.ttf in Resources */,
 				2E3A2CD727A698E300855DDA /* LaunchScreen.storyboard in Resources */,
 				2E3A2D2627AF9E4C00855DDA /* MineViewController.xib in Resources */,
 				2E3A2CD427A698E300855DDA /* Assets.xcassets in Resources */,
@@ -406,7 +412,9 @@
 				2E3A2D0A27A6A9A500855DDA /* HomeTableViewCell.xib in Resources */,
 				2E3A2D1427A6BD9800855DDA /* .gitignore in Resources */,
 				2E406B9427B3B04300C9C0AE /* Settings.bundle in Resources */,
+				2E9790FC27B6889200935E31 /* iconfont.ttf in Resources */,
 				2E3A2D0127A6A4D500855DDA /* HomeViewController.xib in Resources */,
+				3898C4A58AE34C231C8B34ED /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +438,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ $CONFIGURATION = \"Debug\" ]; then\n ${PODS_ROOT}/LicensePlist/license-plist --output-path Swift\\ Boilerplate/Settings.bundle --add-version-numbers\nfi\n";
+		};
+		2E9790FF27B690CF00935E31 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n  \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		64CE039729CE75975B7DFB70 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -494,6 +519,7 @@
 				2E3A2D2127AF9DFD00855DDA /* MineInteractor.swift in Sources */,
 				2E3A2D0927A6A9A500855DDA /* HomeTableViewCell.swift in Sources */,
 				2E3A2CFA27A6A2F400855DDA /* HomeRouter.swift in Sources */,
+				2E9790FE27B68EBB00935E31 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

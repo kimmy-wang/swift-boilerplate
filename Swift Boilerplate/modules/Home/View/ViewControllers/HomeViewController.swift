@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
     init() {
         super.init(nibName: "HomeViewController", bundle: .main)
         let homeTitle = NSLocalizedString("home", comment: "")
-        let tabBarItem = RAMAnimatedTabBarItem(title: homeTitle, image: .icon(from: .TabHome, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22), selectedImage: .icon(from: .TabHomeSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22))
+        let tabBarItem = RAMAnimatedTabBarItem(title: homeTitle, image: .icon(from: .tabHome, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22), selectedImage: .icon(from: .tabHomeSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22))
         tabBarItem.animation = RAMBounceAnimation()
         self.tabBarItem = tabBarItem
         self.title = homeTitle

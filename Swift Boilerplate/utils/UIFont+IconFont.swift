@@ -19,10 +19,12 @@ public extension UIFont {
 
 public enum Iconfont: String {
    //Tabbar Icon
-    case TabHome = "\u{e600}"
-    case TabHomeSelected = "\u{e601}"
-    case TabMine = "\u{e602}"
-    case TabMineSelected = "\u{e603}"
+    case tabHome = "\u{e600}"
+    case tabHomeSelected = "\u{e601}"
+    case tabMine = "\u{e602}"
+    case tabMineSelected = "\u{e603}"
+    case scanning = "\u{e604}"
+    case settings = "\u{e605}"
     
 }
 

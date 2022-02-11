@@ -20,11 +20,13 @@ class MineViewController: UIViewController {
     init() {
         super.init(nibName: "MineViewController", bundle: .main)
         let mineTitle = NSLocalizedString("mine", comment: "")
-        let tabBarItem = RAMAnimatedTabBarItem(title: mineTitle, image: .icon(from: .TabMine, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22), selectedImage: .icon(from: .TabMineSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22))
+        let tabBarItem = RAMAnimatedTabBarItem(title: mineTitle, image: .icon(from: .tabMine, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22), selectedImage: .icon(from: .tabMineSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22))
         tabBarItem.animation = RAMBounceAnimation()
         self.tabBarItem = tabBarItem
         self.title = mineTitle
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Setting", style: .plain, target: self, action: #selector(openSeeting))
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Setting", style: .plain, target: self, action: #selector(openSetting))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: .icon(from: .scanning, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22), style: .plain, target: self, action: #selector(scanning))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: .icon(from: .settings, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22), style: .plain, target: self, action: #selector(openSettings))
     }
     
     required init?(coder: NSCoder) {
@@ -48,7 +50,15 @@ class MineViewController: UIViewController {
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: .main), forCellReuseIdentifier: "HomeTableViewCell")
     }
     
-    @objc func openSeeting() {
+    @objc func scanning() {
+//        self.navigationController?.pushViewController(SettingsViewController(), animated: true)
+    }
+    
+    @objc func openSettings() {
+        self.navigationController?.pushViewController(SettingsViewController(), animated: false)
+    }
+    
+    @objc func openAppSetting() {
         let url = URL(string: UIApplication.openSettingsURLString)!
         UIApplication.shared.open(url)
     }
