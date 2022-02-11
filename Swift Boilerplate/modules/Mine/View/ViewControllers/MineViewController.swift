@@ -6,48 +6,52 @@
 //
 
 import UIKit
+import WebKit
 import RAMAnimatedTabBarController
 
 class MineViewController: UIViewController {
-    
-    // MARK: - IBOutlets
-    @IBOutlet weak var tableView: UITableView!
-    
+
     // MARK: - Properties
     var presenter: MineViewToPresenterProtocol?
+    var webView: WKWebView!
 
     // MARK: - Methods
     init() {
-        super.init(nibName: "MineViewController", bundle: .main)
+        super.init(nibName: nil, bundle: .main)
         let mineTitle = NSLocalizedString("mine", comment: "")
         let tabBarItem = RAMAnimatedTabBarItem(title: mineTitle, image: .icon(from: .tabMine, iconColor: .lightGray, imageSize: CGSize(width: 22, height: 22), ofSize: 22), selectedImage: .icon(from: .tabMineSelected, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22))
         tabBarItem.animation = RAMBounceAnimation()
         self.tabBarItem = tabBarItem
         self.title = mineTitle
-//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Setting", style: .plain, target: self, action: #selector(openSetting))
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: .icon(from: .scanning, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22), style: .plain, target: self, action: #selector(scanning))
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: .icon(from: .settings, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22), style: .plain, target: self, action: #selector(openSettings))
+        let scanningButtonItem = UIBarButtonItem(image: .icon(from: .scanning, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22), style: .plain, target: self, action: #selector(scanning))
+        let settingsButtonItem = UIBarButtonItem(image: .icon(from: .settings, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22), style: .plain, target: self, action: #selector(openSettings))
+        self.navigationItem.rightBarButtonItems = [scanningButtonItem, settingsButtonItem]
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
-    
+
+    override func loadView() {
+        let webViewConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webViewConfiguration)
+        webView.uiDelegate = self
+        view = webView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setUpTableView()
-        
-        presenter?.updateView()
+        setupWebView()
+
+//        presenter?.updateView()
     }
-    
-    private func setUpTableView() {
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.tableFooterView = UIView()
-        
-        tableView.register(UINib(nibName: "HomeTableViewCell", bundle: .main), forCellReuseIdentifier: "HomeTableViewCell")
+
+    private func setupWebView() {
+        webView.uiDelegate = self
+        let urlStr = NSLocalizedString("mine_url", comment: "")
+        webView.load(URLRequest(url: URL(string: urlStr)!))
     }
     
     @objc func scanning() {
@@ -76,32 +80,15 @@ class MineViewController: UIViewController {
 
 }
 
-// MARK: - UITableViewDataSource
-extension MineViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter?.getNewsListCount() ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as? HomeTableViewCell
-        let row = indexPath.row
-        let news = presenter?.getNews(index: row)
-        guard let title = news?.title, let author = news?.author, let description = news?.description else {
-            return cell ?? UITableViewCell()
-        }
-        cell?.setCell(title: title, author: author, description: description)
-        return cell ?? UITableViewCell()
-    }
-}
+extension MineViewController: WKUIDelegate {
 
-// MARK: - UITableViewDelegate
-extension MineViewController: UITableViewDelegate {}
+}
 
 // MARK: - HomePresenterToViewProtocol
 extension MineViewController: MinePresenterToViewProtocol {
 
     func showNews() {
-        tableView.reloadData()
+
     }
     
     func showError() {

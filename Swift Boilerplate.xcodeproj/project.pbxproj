@@ -27,7 +27,6 @@
 		2E3A2D1F27AF9D8E00855DDA /* MineRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D1E27AF9D8E00855DDA /* MineRouter.swift */; };
 		2E3A2D2127AF9DFD00855DDA /* MineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2027AF9DFD00855DDA /* MineInteractor.swift */; };
 		2E3A2D2527AF9E4C00855DDA /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2327AF9E4C00855DDA /* MineViewController.swift */; };
-		2E3A2D2627AF9E4C00855DDA /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2427AF9E4C00855DDA /* MineViewController.xib */; };
 		2E3A2D2827AF9E6700855DDA /* MinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2727AF9E6700855DDA /* MinePresenter.swift */; };
 		2E3A2D3027AFAC5A00855DDA /* UIFont+IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2F27AFAC5A00855DDA /* UIFont+IconFont.swift */; };
 		2E3A2D3B27B5388F00855DDA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A2D3D27B5388F00855DDA /* Localizable.strings */; };
@@ -66,7 +65,6 @@
 		2E3A2D1E27AF9D8E00855DDA /* MineRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineRouter.swift; sourceTree = "<group>"; };
 		2E3A2D2027AF9DFD00855DDA /* MineInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineInteractor.swift; sourceTree = "<group>"; };
 		2E3A2D2327AF9E4C00855DDA /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
-		2E3A2D2427AF9E4C00855DDA /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 		2E3A2D2727AF9E6700855DDA /* MinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinePresenter.swift; sourceTree = "<group>"; };
 		2E3A2D2F27AFAC5A00855DDA /* UIFont+IconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+IconFont.swift"; sourceTree = "<group>"; };
 		2E3A2D3527B5369200855DDA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -301,7 +299,6 @@
 			isa = PBXGroup;
 			children = (
 				2E3A2D2327AF9E4C00855DDA /* MineViewController.swift */,
-				2E3A2D2427AF9E4C00855DDA /* MineViewController.xib */,
 				2E9790FD27B68EBB00935E31 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
@@ -405,7 +402,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E3A2CD727A698E300855DDA /* LaunchScreen.storyboard in Resources */,
-				2E3A2D2627AF9E4C00855DDA /* MineViewController.xib in Resources */,
 				2E3A2CD427A698E300855DDA /* Assets.xcassets in Resources */,
 				2E3A2CD227A698E100855DDA /* Main.storyboard in Resources */,
 				2E3A2D3B27B5388F00855DDA /* Localizable.strings in Resources */,

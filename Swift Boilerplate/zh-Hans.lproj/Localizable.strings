@@ -6,5 +6,9 @@
   
 */
 
+// tab bar
 "home" = "首页";
 "mine" = "我的";
+
+// mine url
+"mine_url" = "https://readme.gitterapp.com/?locale=zh_CN";

@@ -6,5 +6,9 @@
   
 */
 
+// tab bar
 "home" = "Home";
 "mine" = "Mine";
+
+// mine url
+"mine_url" = "https://readme.gitterapp.com/?locale=en";
