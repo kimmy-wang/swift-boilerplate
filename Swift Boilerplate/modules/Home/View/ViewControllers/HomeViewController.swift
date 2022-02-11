@@ -10,11 +10,10 @@ import SkeletonView
 import RAMAnimatedTabBarController
 
 class HomeViewController: UIViewController {
-    
+
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
-    
-    
+
     // MARK: - Properties
     var presenter: HomeViewToPresenterProtocol?
     let refreshControl = UIRefreshControl()
@@ -28,46 +27,45 @@ class HomeViewController: UIViewController {
         self.tabBarItem = tabBarItem
         self.title = homeTitle
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         view.showAnimatedSkeleton()
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setUpRefreshControl()
-        
+
         setUpTableView()
-        
+
         presenter?.updateView()
     }
-    
+
     private func setUpRefreshControl() {
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
     }
-    
+
     private func setUpTableView() {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
         tableView.isSkeletonable = true
         tableView.refreshControl = refreshControl
-        
+
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: .main), forCellReuseIdentifier: "HomeTableViewCell")
     }
-    
+
     @objc func refresh(_ sender: AnyObject) {
        // Code to refresh table view
     }
-
 
     /*
     // MARK: - Navigation
@@ -86,7 +84,7 @@ extension HomeViewController: SkeletonTableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter?.getNewsListCount() ?? 0
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as? HomeTableViewCell
         let row = indexPath.row
@@ -97,11 +95,11 @@ extension HomeViewController: SkeletonTableViewDataSource {
         cell?.setCell(title: title, author: author, description: description)
         return cell ?? UITableViewCell()
     }
-    
+
     func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
         return "HomeTableViewCell"
     }
-    
+
     func collectionSkeletonView(_ skeletonView: UITableView, skeletonCellForRowAt indexPath: IndexPath) -> UITableViewCell? {
         let cell = skeletonView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as? HomeTableViewCell
         return cell
@@ -113,7 +111,7 @@ extension HomeViewController: UITableViewDelegate {}
 
 // MARK: - HomePresenterToViewProtocol
 extension HomeViewController: HomePresenterToViewProtocol {
-    
+
     func showSkeleton() {
         tableView.showAnimatedSkeleton(usingColor: .red)
     }
@@ -122,7 +120,7 @@ extension HomeViewController: HomePresenterToViewProtocol {
         tableView.hideSkeleton()
         tableView.reloadData()
     }
-    
+
     func showError() {
         tableView.hideSkeleton()
         let alert = UIAlertController(title: "Alert", message: "Problem Fetching News", preferredStyle: UIAlertController.Style.alert)

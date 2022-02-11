@@ -23,7 +23,7 @@ protocol HomeInteractorToPresenterProtocol: AnyObject {
 protocol HomePresentorToInteractorProtocol: AnyObject {
     var presenter: HomeInteractorToPresenterProtocol? { get set }
     var news: [HomeModel]? { get }
-    
+
     func fetchLiveNews()
 }
 
@@ -31,7 +31,7 @@ protocol HomeViewToPresenterProtocol: AnyObject {
     var view: HomePresenterToViewProtocol? { get set }
     var interactor: HomePresentorToInteractorProtocol? { get set }
     var router: HomePresenterToRouterProtocol? { get set }
-    
+
     func updateView()
     func getNewsListCount() -> Int?
     func getNews(index: Int) -> HomeModel?

@@ -21,7 +21,7 @@ protocol MineInteractorToPresenterProtocol: AnyObject {
 protocol MinePresentorToInteractorProtocol: AnyObject {
     var presenter: MineInteractorToPresenterProtocol? { get set }
     var news: [HomeModel]? { get }
-    
+
     func fetchLiveNews()
 }
 
@@ -29,7 +29,7 @@ protocol MineViewToPresenterProtocol: AnyObject {
     var view: MinePresenterToViewProtocol? { get set }
     var interactor: MinePresentorToInteractorProtocol? { get set }
     var router: MinePresenterToRouterProtocol? { get set }
-    
+
     func updateView()
     func getNewsListCount() -> Int?
     func getNews(index: Int) -> HomeModel?

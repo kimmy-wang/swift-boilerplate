@@ -13,12 +13,12 @@ class HomeInteractor: HomePresentorToInteractorProtocol {
     // MARK: - Properties
     weak var presenter: HomeInteractorToPresenterProtocol?
     var news: [HomeModel]?
-    
+
     // MARK: - Methods
     func fetchLiveNews() {
         self.presenter?.liveNewsFetching()
         AF.request(Constants.URL).response { response in
-            if(response.response?.statusCode == 200){
+            if (response.response?.statusCode == 200) {
                 guard let data = response.data else { return }
                 do {
                     let decoder = JSONDecoder()
@@ -29,8 +29,7 @@ class HomeInteractor: HomePresentorToInteractorProtocol {
                 } catch let error {
                     print(error)
                 }
-            }
-            else {
+            } else {
                 self.presenter?.liveNewsFetchedFailed()
             }
         }

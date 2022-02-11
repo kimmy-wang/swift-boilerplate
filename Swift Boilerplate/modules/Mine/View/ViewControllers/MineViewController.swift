@@ -27,7 +27,7 @@ class MineViewController: UIViewController {
         let settingsButtonItem = UIBarButtonItem(image: .icon(from: .settings, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22), style: .plain, target: self, action: #selector(openSettings))
         self.navigationItem.rightBarButtonItems = [scanningButtonItem, settingsButtonItem]
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
@@ -53,20 +53,19 @@ class MineViewController: UIViewController {
         let urlStr = NSLocalizedString("mine_url", comment: "")
         webView.load(URLRequest(url: URL(string: urlStr)!))
     }
-    
+
     @objc func scanning() {
-//        self.navigationController?.pushViewController(SettingsViewController(), animated: true)
+
     }
-    
+
     @objc func openSettings() {
         self.navigationController?.pushViewController(SettingsViewController(), animated: false)
     }
-    
+
     @objc func openAppSetting() {
         let url = URL(string: UIApplication.openSettingsURLString)!
         UIApplication.shared.open(url)
     }
-
 
     /*
     // MARK: - Navigation
@@ -90,7 +89,7 @@ extension MineViewController: MinePresenterToViewProtocol {
     func showNews() {
 
     }
-    
+
     func showError() {
         let alert = UIAlertController(title: "Alert", message: "Problem Fetching News", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))

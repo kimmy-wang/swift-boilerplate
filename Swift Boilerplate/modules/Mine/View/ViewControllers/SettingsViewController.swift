@@ -15,7 +15,7 @@ class SettingsViewController: QuickTableViewController {
 
         // Do any additional setup after loading the view.
         self.title = "Settings"
-        
+
         tableContents = [
           Section(title: "Switch", rows: [
             SwitchRow(text: "Setting 1", switchValue: true, action: { _ in }),
@@ -40,7 +40,7 @@ class SettingsViewController: QuickTableViewController {
           ], footer: "See RadioSection for more details.")
         ]
     }
-    
+
     // MARK: - Actions
 
       private func showAlert(_ sender: Row) {
@@ -52,7 +52,6 @@ class SettingsViewController: QuickTableViewController {
           // ...
         }
       }
-    
 
     /*
     // MARK: - Navigation
