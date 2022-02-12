@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 import SkeletonView
 import RAMAnimatedTabBarController
 
@@ -113,16 +114,19 @@ extension HomeViewController: UITableViewDelegate {}
 extension HomeViewController: HomePresenterToViewProtocol {
 
     func showSkeleton() {
-        tableView.showAnimatedSkeleton(usingColor: .red)
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+//        tableView.showAnimatedSkeleton(usingColor: .red)
     }
 
     func showNews() {
-        tableView.hideSkeleton()
+        MBProgressHUD.hide(for: self.view, animated: true)
+//        tableView.hideSkeleton()
         tableView.reloadData()
     }
 
     func showError() {
-        tableView.hideSkeleton()
+        MBProgressHUD.hide(for: self.view, animated: true)
+//        tableView.hideSkeleton()
         let alert = UIAlertController(title: "Alert", message: "Problem Fetching News", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)

@@ -8,6 +8,7 @@ target 'Swift Boilerplate' do
   # Pods for Swift Boilerplate
   pod 'SnapKit', '~> 5.0.1'
   pod 'Alamofire', '~> 5.5.0'
+  pod 'AlamofireNetworkActivityIndicator', '~> 3.1.0'
   pod 'Moya', '~> 15.0'
   pod 'SwiftyJSON', '~> 4.3.0'
   pod 'RAMAnimatedTabBarController', '~> 5.2.0'
@@ -23,6 +24,7 @@ target 'Swift Boilerplate' do
   pod 'lottie-ios', '~> 3.2.3'
   pod 'SwiftTheme', '~> 0.6.4'
   pod 'Localize-Swift', '~> 3.2.0'
+  pod 'MBProgressHUD', '~> 1.2.0'
   pod 'SwiftLint'
 
 end

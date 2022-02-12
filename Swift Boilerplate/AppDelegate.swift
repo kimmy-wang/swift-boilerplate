@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireNetworkActivityIndicator
 import RAMAnimatedTabBarController
 
 @UIApplicationMain
@@ -14,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        NetworkActivityIndicatorManager.shared.isEnabled = true
 
         let news = HomeRouter.createModule()
         let mine = MineRouter.createModule()
