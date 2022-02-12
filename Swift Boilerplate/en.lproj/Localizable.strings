@@ -10,5 +10,9 @@
 "home" = "Home";
 "mine" = "Mine";
 
+// settings
+"settings" = "Settings";
+"languages" = "Languages";
+
 // mine url
 "mine_url" = "https://readme.gitterapp.com/?locale=en";

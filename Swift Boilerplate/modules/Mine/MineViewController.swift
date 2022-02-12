@@ -62,11 +62,6 @@ class MineViewController: UIViewController {
         self.navigationController?.pushViewController(SettingsViewController(), animated: false)
     }
 
-    @objc func openAppSetting() {
-        let url = URL(string: UIApplication.openSettingsURLString)!
-        UIApplication.shared.open(url)
-    }
-
     /*
     // MARK: - Navigation
 

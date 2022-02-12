@@ -10,5 +10,9 @@
 "home" = "首页";
 "mine" = "我的";
 
+// settings
+"settings" = "设置";
+"languages" = "语言环境";
+
 // mine url
 "mine_url" = "https://readme.gitterapp.com/?locale=zh_CN";
