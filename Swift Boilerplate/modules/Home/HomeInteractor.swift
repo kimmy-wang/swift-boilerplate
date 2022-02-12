@@ -15,8 +15,8 @@ class HomeInteractor: HomePresentorToInteractorProtocol {
     var news: [HomeModel]?
 
     // MARK: - Methods
-    func fetchLiveNews() {
-        self.presenter?.liveNewsFetching()
+    func fetchLiveNews(_ pullToRefresh: Bool) {
+        self.presenter?.liveNewsFetching(pullToRefresh: pullToRefresh)
         AF.request(Constants.URL).response { response in
             if (response.response?.statusCode == 200) {
                 guard let data = response.data else { return }
@@ -25,12 +25,12 @@ class HomeInteractor: HomePresentorToInteractorProtocol {
                     let newsResponse = try decoder.decode(HomeResponse.self, from: data)
                     guard let articles = newsResponse.articles else { return }
                     self.news = articles
-                    self.presenter?.liveNewsFetched()
+                    self.presenter?.liveNewsFetched(pullToRefresh: pullToRefresh)
                 } catch let error {
                     print(error)
                 }
             } else {
-                self.presenter?.liveNewsFetchedFailed()
+                self.presenter?.liveNewsFetchedFailed(pullToRefresh: pullToRefresh)
             }
         }
     }

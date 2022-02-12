@@ -46,7 +46,7 @@ class HomeViewController: UIViewController {
 
         setUpTableView()
 
-        presenter?.updateView()
+        presenter?.updateView(pullToRefresh: false)
     }
 
     private func setUpRefreshControl() {
@@ -66,6 +66,7 @@ class HomeViewController: UIViewController {
 
     @objc func refresh(_ sender: AnyObject) {
        // Code to refresh table view
+        presenter?.updateView(pullToRefresh: true)
     }
 
     /*
@@ -113,20 +114,32 @@ extension HomeViewController: UITableViewDelegate {}
 // MARK: - HomePresenterToViewProtocol
 extension HomeViewController: HomePresenterToViewProtocol {
 
-    func showSkeleton() {
-        MBProgressHUD.showAdded(to: self.view, animated: true)
-//        tableView.showAnimatedSkeleton(usingColor: .red)
+    func showSkeleton(_ pullToRefresh: Bool) {
+        if pullToRefresh {
+
+        } else {
+            MBProgressHUD.showAdded(to: self.view, animated: true)
+//            tableView.showAnimatedSkeleton(usingColor: .red)
+        }
     }
 
-    func showNews() {
-        MBProgressHUD.hide(for: self.view, animated: true)
-//        tableView.hideSkeleton()
+    func showNews(_ pullToRefresh: Bool) {
+        if pullToRefresh {
+            refreshControl.endRefreshing()
+        } else {
+            MBProgressHUD.hide(for: self.view, animated: true)
+//            tableView.hideSkeleton()
+        }
         tableView.reloadData()
     }
 
-    func showError() {
-        MBProgressHUD.hide(for: self.view, animated: true)
-//        tableView.hideSkeleton()
+    func showError(_ pullToRefresh: Bool) {
+        if pullToRefresh {
+            refreshControl.endRefreshing()
+        } else {
+            MBProgressHUD.hide(for: self.view, animated: true)
+//            tableView.hideSkeleton()
+        }
         let alert = UIAlertController(title: "Alert", message: "Problem Fetching News", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)

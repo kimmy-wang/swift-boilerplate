@@ -9,22 +9,22 @@ import Foundation
 import UIKit
 
 protocol HomePresenterToViewProtocol: AnyObject {
-    func showSkeleton()
-    func showNews()
-    func showError()
+    func showSkeleton(_ pullToRefresh: Bool)
+    func showNews(_ pullToRefresh: Bool)
+    func showError(_ pullToRefresh: Bool)
 }
 
 protocol HomeInteractorToPresenterProtocol: AnyObject {
-    func liveNewsFetching()
-    func liveNewsFetched()
-    func liveNewsFetchedFailed()
+    func liveNewsFetching(pullToRefresh: Bool)
+    func liveNewsFetched(pullToRefresh: Bool)
+    func liveNewsFetchedFailed(pullToRefresh: Bool)
 }
 
 protocol HomePresentorToInteractorProtocol: AnyObject {
     var presenter: HomeInteractorToPresenterProtocol? { get set }
     var news: [HomeModel]? { get }
 
-    func fetchLiveNews()
+    func fetchLiveNews(_ pullToRefresh: Bool)
 }
 
 protocol HomeViewToPresenterProtocol: AnyObject {
@@ -32,7 +32,7 @@ protocol HomeViewToPresenterProtocol: AnyObject {
     var interactor: HomePresentorToInteractorProtocol? { get set }
     var router: HomePresenterToRouterProtocol? { get set }
 
-    func updateView()
+    func updateView(pullToRefresh: Bool)
     func getNewsListCount() -> Int?
     func getNews(index: Int) -> HomeModel?
 }
