@@ -156,82 +156,18 @@
 		2E3A2CDF27A69F8100855DDA /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2E3A2CF227A6A06900855DDA /* Entity */,
-				2E3A2CF127A6A05D00855DDA /* Protocols */,
-				2E3A2CF027A6A04E00855DDA /* Presenter */,
-				2E3A2CEF27A6A04700855DDA /* Route */,
-				2E3A2CEE27A6A03C00855DDA /* Interactor */,
-				2E3A2CED27A6A02900855DDA /* View */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		2E3A2CED27A6A02900855DDA /* View */ = {
-			isa = PBXGroup;
-			children = (
-				2E3A2D0227A6A84000855DDA /* Cells */,
-				2E3A2CFD27A6A47F00855DDA /* ViewControllers */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		2E3A2CEE27A6A03C00855DDA /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				2E3A2D0B27A6AA3E00855DDA /* HomeInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		2E3A2CEF27A6A04700855DDA /* Route */ = {
-			isa = PBXGroup;
-			children = (
-				2E3A2CF927A6A2F400855DDA /* HomeRouter.swift */,
-			);
-			path = Route;
-			sourceTree = "<group>";
-		};
-		2E3A2CF027A6A04E00855DDA /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				2E3A2CFB27A6A33B00855DDA /* HomePresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		2E3A2CF127A6A05D00855DDA /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				2E3A2CF327A6A1F300855DDA /* HomeProtocols.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		2E3A2CF227A6A06900855DDA /* Entity */ = {
-			isa = PBXGroup;
-			children = (
 				2E3A2CF527A6A26E00855DDA /* HomeModel.swift */,
 				2E3A2CF727A6A2A000855DDA /* HomeResponse.swift */,
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		2E3A2CFD27A6A47F00855DDA /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
+				2E3A2CF327A6A1F300855DDA /* HomeProtocols.swift */,
+				2E3A2CFB27A6A33B00855DDA /* HomePresenter.swift */,
+				2E3A2CF927A6A2F400855DDA /* HomeRouter.swift */,
+				2E3A2D0B27A6AA3E00855DDA /* HomeInteractor.swift */,
+				2E3A2D0727A6A9A500855DDA /* HomeTableViewCell.swift */,
+				2E3A2D0827A6A9A500855DDA /* HomeTableViewCell.xib */,
 				2E3A2CFE27A6A4D500855DDA /* HomeViewController.swift */,
 				2E3A2CFF27A6A4D500855DDA /* HomeViewController.xib */,
 			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		2E3A2D0227A6A84000855DDA /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				2E3A2D0727A6A9A500855DDA /* HomeTableViewCell.swift */,
-				2E3A2D0827A6A9A500855DDA /* HomeTableViewCell.xib */,
-			);
-			path = Cells;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		2E3A2D0D27A6AA6A00855DDA /* utils */ = {
@@ -246,62 +182,14 @@
 		2E3A2D1527AF9B9C00855DDA /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				2E3A2D1B27AF9BF200855DDA /* Protocols */,
-				2E3A2D1A27AF9BE300855DDA /* Presenter */,
-				2E3A2D1927AF9BD800855DDA /* Interactor */,
-				2E3A2D1827AF9BC900855DDA /* Route */,
-				2E3A2D1627AF9BB700855DDA /* View */,
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		2E3A2D1627AF9BB700855DDA /* View */ = {
-			isa = PBXGroup;
-			children = (
-				2E3A2D2227AF9E0800855DDA /* ViewControllers */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		2E3A2D1827AF9BC900855DDA /* Route */ = {
-			isa = PBXGroup;
-			children = (
-				2E3A2D1E27AF9D8E00855DDA /* MineRouter.swift */,
-			);
-			path = Route;
-			sourceTree = "<group>";
-		};
-		2E3A2D1927AF9BD800855DDA /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				2E3A2D2027AF9DFD00855DDA /* MineInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		2E3A2D1A27AF9BE300855DDA /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				2E3A2D2727AF9E6700855DDA /* MinePresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		2E3A2D1B27AF9BF200855DDA /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
 				2E3A2D1C27AF9D4000855DDA /* MineProtocols.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		2E3A2D2227AF9E0800855DDA /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
+				2E3A2D2727AF9E6700855DDA /* MinePresenter.swift */,
+				2E3A2D2027AF9DFD00855DDA /* MineInteractor.swift */,
+				2E3A2D1E27AF9D8E00855DDA /* MineRouter.swift */,
 				2E3A2D2327AF9E4C00855DDA /* MineViewController.swift */,
 				2E9790FD27B68EBB00935E31 /* SettingsViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		2E3A2D2C27AFA8DF00855DDA /* fonts */ = {
@@ -315,17 +203,9 @@
 		2E406B9527B4A9FF00C9C0AE /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				2E406B9627B4AA0C00C9C0AE /* View */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		2E406B9627B4AA0C00C9C0AE /* View */ = {
-			isa = PBXGroup;
-			children = (
 				2E406B9727B4AA3B00C9C0AE /* BaseViewController.swift */,
 			);
-			path = View;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		A22BB8670E43E0589DF64E0F /* Pods */ = {
