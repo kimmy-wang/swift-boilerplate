@@ -44,10 +44,6 @@ name: Moya, nameSpecified:
 body: The MIT License (MIT…
 version: 15.0.0
 
-name: NVActivityIndicatorView, nameSpecified: 
-body: The MIT License (MIT…
-version: 5.1.1
-
 name: QuickTableViewController, nameSpecified: 
 body: The MIT License (MIT…
 version: 1.3.1

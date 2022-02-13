@@ -8,7 +8,6 @@ ${BUILT_PRODUCTS_DIR}/Instructions/Instructions.framework
 ${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework
 ${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
-${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
 ${BUILT_PRODUCTS_DIR}/QuickTableViewController/QuickTableViewController.framework
 ${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework
 ${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
