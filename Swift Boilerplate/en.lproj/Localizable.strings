@@ -10,6 +10,9 @@
 "home" = "Home";
 "mine" = "Mine";
 
+// home
+"no_more_data" = "no more data";
+
 // settings
 "settings" = "Settings";
 "languages" = "Languages";

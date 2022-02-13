@@ -19,8 +19,7 @@ class HomeViewController: UIViewController {
     // MARK: - Properties
     var presenter: HomeViewToPresenterProtocol?
     let loadingView = DGElasticPullToRefreshLoadingViewCircle()
-    let activityIndicator = UIActivityIndicatorView()
-    let noLoadMore = UILabel()
+    let activityIndicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
 
     // MARK: - Methods
     init() {
@@ -97,11 +96,14 @@ extension HomeViewController: SkeletonTableViewDataSource {
                 tableView.tableFooterView = activityIndicator
                 presenter?.updateView(pullToRefresh: false, loadMore: true)
             } else {
-                let label = UILabel()
-                label.frame = CGRect(x: (UIScreen.main.bounds.size.width - 100) / 2, y: 0, width: 100, height: 50)
-                label.text = "没有更多数据了"
-                label.textColor = .lightGray
-                tableView.tableFooterView = label
+                let noMoreDataLabel = UILabel()
+                let noMoreDataTitle = NSLocalizedString("no_more_data", comment: "")
+                noMoreDataLabel.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50)
+                noMoreDataLabel.text = noMoreDataTitle
+                noMoreDataLabel.textAlignment = .center
+                noMoreDataLabel.font = UIFont.systemFont(ofSize: 14)
+                noMoreDataLabel.textColor = .lightGray
+                tableView.tableFooterView = noMoreDataLabel
 //                DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
 //                    self?.tableView.tableFooterView = nil
 //                    self?.tableView.reloadData()

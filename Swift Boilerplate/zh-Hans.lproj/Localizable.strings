@@ -10,6 +10,9 @@
 "home" = "首页";
 "mine" = "我的";
 
+// home
+"no_more_data" = "没有更多数据了";
+
 // settings
 "settings" = "设置";
 "languages" = "语言环境";
