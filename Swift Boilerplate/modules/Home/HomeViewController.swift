@@ -19,6 +19,8 @@ class HomeViewController: UIViewController {
     // MARK: - Properties
     var presenter: HomeViewToPresenterProtocol?
     let loadingView = DGElasticPullToRefreshLoadingViewCircle()
+    let activityIndicator = UIActivityIndicatorView()
+    let noLoadMore = UILabel()
 
     // MARK: - Methods
     init() {
@@ -49,7 +51,7 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         setUpTableView()
 
-        presenter?.updateView(pullToRefresh: false)
+        presenter?.updateView(pullToRefresh: false, loadMore: false)
     }
 
     private func setUpTableView() {
@@ -58,7 +60,7 @@ class HomeViewController: UIViewController {
         tableView.tableFooterView = UIView()
         tableView.isSkeletonable = true
         tableView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
-            self?.presenter?.updateView(pullToRefresh: true)
+            self?.presenter?.updateView(pullToRefresh: true, loadMore: false)
         }, loadingView: loadingView)
 
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: .main), forCellReuseIdentifier: "HomeTableViewCell")
@@ -66,7 +68,7 @@ class HomeViewController: UIViewController {
 
     @objc func refresh(_ sender: AnyObject) {
        // Code to refresh table view
-        presenter?.updateView(pullToRefresh: true)
+        presenter?.updateView(pullToRefresh: true, loadMore: false)
     }
 
     /*
@@ -90,6 +92,22 @@ extension HomeViewController: SkeletonTableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as? HomeTableViewCell
         let row = indexPath.row
+        if row == (presenter?.getNewsListCount() ?? 0) - 1 {
+            if (presenter?.getNewsListCount() ?? 0) < (presenter?.getCount() ?? 0) {
+                tableView.tableFooterView = activityIndicator
+                presenter?.updateView(pullToRefresh: false, loadMore: true)
+            } else {
+                let label = UILabel()
+                label.frame = CGRect(x: (UIScreen.main.bounds.size.width - 100) / 2, y: 0, width: 100, height: 50)
+                label.text = "没有更多数据了"
+                label.textColor = .lightGray
+                tableView.tableFooterView = label
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
+//                    self?.tableView.tableFooterView = nil
+//                    self?.tableView.reloadData()
+//                }
+            }
+        }
         let news = presenter?.getNews(index: row)
         guard let title = news?.title, let author = news?.author, let description = news?.description else {
             return cell ?? UITableViewCell()
@@ -114,31 +132,43 @@ extension HomeViewController: UITableViewDelegate {}
 // MARK: - HomePresenterToViewProtocol
 extension HomeViewController: HomePresenterToViewProtocol {
 
-    func showSkeleton(_ pullToRefresh: Bool) {
-        if pullToRefresh {
-            tableView.dg_startLoading()
+    func showSkeleton(_ pullToRefresh: Bool, loadMore: Bool) {
+        if loadMore {
+            activityIndicator.startAnimating()
         } else {
-            MBProgressHUD.showAdded(to: self.view, animated: true)
-//            tableView.showAnimatedSkeleton(usingColor: .red)
+            if pullToRefresh {
+                tableView.dg_startLoading()
+            } else {
+                MBProgressHUD.showAdded(to: self.view, animated: true)
+//                tableView.showAnimatedSkeleton(usingColor: .red)
+            }
         }
     }
 
-    func showNews(_ pullToRefresh: Bool) {
-        if pullToRefresh {
-            tableView.dg_stopLoading()
+    func showNews(_ pullToRefresh: Bool, loadMore: Bool) {
+        if loadMore {
+            activityIndicator.stopAnimating()
         } else {
-            MBProgressHUD.hide(for: self.view, animated: true)
-//            tableView.hideSkeleton()
+            if pullToRefresh {
+                tableView.dg_stopLoading()
+            } else {
+                MBProgressHUD.hide(for: self.view, animated: true)
+//                tableView.hideSkeleton()
+            }
         }
         tableView.reloadData()
     }
 
-    func showError(_ pullToRefresh: Bool) {
-        if pullToRefresh {
-            tableView.dg_stopLoading()
+    func showError(_ pullToRefresh: Bool, loadMore: Bool) {
+        if loadMore {
+            activityIndicator.stopAnimating()
         } else {
-            MBProgressHUD.hide(for: self.view, animated: true)
-//            tableView.hideSkeleton()
+            if pullToRefresh {
+                tableView.dg_stopLoading()
+            } else {
+                MBProgressHUD.hide(for: self.view, animated: true)
+//                tableView.hideSkeleton()
+            }
         }
         let alert = UIAlertController(title: "Alert", message: "Problem Fetching News", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))

@@ -11,5 +11,6 @@ struct HomeResponse: Codable {
     let status: Int?
     let source: String?
     let sortBy: String?
+    let count: Int?
     let articles: [HomeModel]?
 }

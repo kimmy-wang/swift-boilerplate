@@ -15,8 +15,12 @@ class HomePresenter: HomeViewToPresenterProtocol {
     var router: HomePresenterToRouterProtocol?
 
     // MARK: - Methods
-    func updateView(pullToRefresh: Bool) {
-        interactor?.fetchLiveNews(pullToRefresh)
+    func updateView(pullToRefresh: Bool, loadMore: Bool) {
+        interactor?.fetchLiveNews(pullToRefresh, loadMore: loadMore)
+    }
+
+    func getCount() -> Int? {
+        return interactor?.count
     }
 
     func getNewsListCount() -> Int? {
@@ -30,15 +34,15 @@ class HomePresenter: HomeViewToPresenterProtocol {
 
 // MARK: - HomeInteractorToPresenterProtocol
 extension HomePresenter: HomeInteractorToPresenterProtocol {
-    func liveNewsFetching(pullToRefresh: Bool) {
-        view?.showSkeleton(pullToRefresh)
+    func liveNewsFetching(pullToRefresh: Bool, loadMore: Bool) {
+        view?.showSkeleton(pullToRefresh, loadMore: loadMore)
     }
 
-    func liveNewsFetched(pullToRefresh: Bool) {
-        view?.showNews(pullToRefresh)
+    func liveNewsFetched(pullToRefresh: Bool, loadMore: Bool) {
+        view?.showNews(pullToRefresh, loadMore: loadMore)
     }
 
-    func liveNewsFetchedFailed(pullToRefresh: Bool) {
-        view?.showError(pullToRefresh)
+    func liveNewsFetchedFailed(pullToRefresh: Bool, loadMore: Bool) {
+        view?.showError(pullToRefresh, loadMore: loadMore)
     }
 }

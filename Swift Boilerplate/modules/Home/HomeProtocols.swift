@@ -9,22 +9,24 @@ import Foundation
 import UIKit
 
 protocol HomePresenterToViewProtocol: AnyObject {
-    func showSkeleton(_ pullToRefresh: Bool)
-    func showNews(_ pullToRefresh: Bool)
-    func showError(_ pullToRefresh: Bool)
+    func showSkeleton(_ pullToRefresh: Bool, loadMore: Bool)
+    func showNews(_ pullToRefresh: Bool, loadMore: Bool)
+    func showError(_ pullToRefresh: Bool, loadMore: Bool)
 }
 
 protocol HomeInteractorToPresenterProtocol: AnyObject {
-    func liveNewsFetching(pullToRefresh: Bool)
-    func liveNewsFetched(pullToRefresh: Bool)
-    func liveNewsFetchedFailed(pullToRefresh: Bool)
+    func liveNewsFetching(pullToRefresh: Bool, loadMore: Bool)
+    func liveNewsFetched(pullToRefresh: Bool, loadMore: Bool)
+    func liveNewsFetchedFailed(pullToRefresh: Bool, loadMore: Bool)
 }
 
 protocol HomePresentorToInteractorProtocol: AnyObject {
     var presenter: HomeInteractorToPresenterProtocol? { get set }
     var news: [HomeModel]? { get }
+    var count: Int { get }
+    var page: Int { get }
 
-    func fetchLiveNews(_ pullToRefresh: Bool)
+    func fetchLiveNews(_ pullToRefresh: Bool, loadMore: Bool)
 }
 
 protocol HomeViewToPresenterProtocol: AnyObject {
@@ -32,7 +34,8 @@ protocol HomeViewToPresenterProtocol: AnyObject {
     var interactor: HomePresentorToInteractorProtocol? { get set }
     var router: HomePresenterToRouterProtocol? { get set }
 
-    func updateView(pullToRefresh: Bool)
+    func updateView(pullToRefresh: Bool, loadMore: Bool)
+    func getCount() -> Int?
     func getNewsListCount() -> Int?
     func getNews(index: Int) -> HomeModel?
 }
