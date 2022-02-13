@@ -25,6 +25,7 @@ target 'Swift Boilerplate' do
   pod 'SwiftTheme', '~> 0.6.4'
   pod 'Localize-Swift', '~> 3.2.0'
   pod 'MBProgressHUD', '~> 1.2.0'
+  pod 'DGElasticPullToRefresh2'
   pod 'SwiftLint'
 
 end

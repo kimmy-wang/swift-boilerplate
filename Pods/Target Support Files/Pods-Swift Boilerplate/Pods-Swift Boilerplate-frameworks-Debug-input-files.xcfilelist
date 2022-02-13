@@ -2,6 +2,7 @@ ${PODS_ROOT}/Target Support Files/Pods-Swift Boilerplate/Pods-Swift Boilerplate-
 ${BUILT_PRODUCTS_DIR}/Action/Action.framework
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework
+${BUILT_PRODUCTS_DIR}/DGElasticPullToRefresh2/DGElasticPullToRefresh2.framework
 ${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework
 ${BUILT_PRODUCTS_DIR}/Instructions/Instructions.framework
 ${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework

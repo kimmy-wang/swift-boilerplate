@@ -6,6 +6,7 @@ PODS:
   - AlamofireNetworkActivityIndicator (3.1.0):
     - Alamofire (~> 5.1)
   - DeviceKit (4.5.2)
+  - DGElasticPullToRefresh2 (1.0.0)
   - Instructions (2.1.1)
   - LicensePlist (3.17.0)
   - Localize-Swift (3.2.0):
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.5.0)
   - AlamofireNetworkActivityIndicator (~> 3.1.0)
   - DeviceKit (~> 4.5.2)
+  - DGElasticPullToRefresh2
   - Instructions (~> 2.1.1)
   - LicensePlist (~> 3.17.0)
   - Localize-Swift (~> 3.2.0)
@@ -65,6 +67,7 @@ SPEC REPOS:
     - Alamofire
     - AlamofireNetworkActivityIndicator
     - DeviceKit
+    - DGElasticPullToRefresh2
     - Instructions
     - LicensePlist
     - Localize-Swift
@@ -88,6 +91,7 @@ SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   AlamofireNetworkActivityIndicator: 6564782bd7b9e6c430ae67d9277af01907b01ca4
   DeviceKit: c622fc19f795f3e0b4d75d6d11b26604338cdab3
+  DGElasticPullToRefresh2: 0e0159f7c34f72c2ebf246d611f459536a12a74a
   Instructions: bde4a699f27e8e43d20efa3508e5bc53215d0879
   LicensePlist: f7eaf6d1d39746d49415ab30f104b734d5163519
   Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
@@ -106,6 +110,6 @@ SPEC CHECKSUMS:
   SwiftTheme: 007cbaf1f9e171caf6448a4657533e54c682b285
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 0fd24c929b95b98b5e904e2ce85ba8a5ca71d553
+PODFILE CHECKSUM: 1c929b4597b94ee7aef70f90948bce8d0907020e
 
 COCOAPODS: 1.11.2

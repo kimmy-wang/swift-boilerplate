@@ -8,6 +8,7 @@
 import UIKit
 import MBProgressHUD
 import SkeletonView
+import DGElasticPullToRefresh2
 import RAMAnimatedTabBarController
 
 class HomeViewController: UIViewController {
@@ -17,7 +18,7 @@ class HomeViewController: UIViewController {
 
     // MARK: - Properties
     var presenter: HomeViewToPresenterProtocol?
-    let refreshControl = UIRefreshControl()
+    let loadingView = DGElasticPullToRefreshLoadingViewCircle()
 
     // MARK: - Methods
     init() {
@@ -33,6 +34,10 @@ class HomeViewController: UIViewController {
         super.init(coder: coder)
     }
 
+    deinit {
+        tableView.dg_removePullToRefresh()
+    }
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         view.showAnimatedSkeleton()
@@ -42,16 +47,9 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setUpRefreshControl()
-
         setUpTableView()
 
         presenter?.updateView(pullToRefresh: false)
-    }
-
-    private func setUpRefreshControl() {
-        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
-        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
     }
 
     private func setUpTableView() {
@@ -59,7 +57,9 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.tableFooterView = UIView()
         tableView.isSkeletonable = true
-        tableView.refreshControl = refreshControl
+        tableView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
+            self?.presenter?.updateView(pullToRefresh: true)
+        }, loadingView: loadingView)
 
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: .main), forCellReuseIdentifier: "HomeTableViewCell")
     }
@@ -116,7 +116,7 @@ extension HomeViewController: HomePresenterToViewProtocol {
 
     func showSkeleton(_ pullToRefresh: Bool) {
         if pullToRefresh {
-
+            tableView.dg_startLoading()
         } else {
             MBProgressHUD.showAdded(to: self.view, animated: true)
 //            tableView.showAnimatedSkeleton(usingColor: .red)
@@ -125,7 +125,7 @@ extension HomeViewController: HomePresenterToViewProtocol {
 
     func showNews(_ pullToRefresh: Bool) {
         if pullToRefresh {
-            refreshControl.endRefreshing()
+            tableView.dg_stopLoading()
         } else {
             MBProgressHUD.hide(for: self.view, animated: true)
 //            tableView.hideSkeleton()
@@ -135,7 +135,7 @@ extension HomeViewController: HomePresenterToViewProtocol {
 
     func showError(_ pullToRefresh: Bool) {
         if pullToRefresh {
-            refreshControl.endRefreshing()
+            tableView.dg_stopLoading()
         } else {
             MBProgressHUD.hide(for: self.view, animated: true)
 //            tableView.hideSkeleton()
