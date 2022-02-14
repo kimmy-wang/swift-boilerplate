@@ -12,14 +12,6 @@
 		</dict>
 		<dict>
 			<key>File</key>
-			<string>com.mono0926.LicensePlist/Action</string>
-			<key>Title</key>
-			<string>Action (5.0.0)</string>
-			<key>Type</key>
-			<string>PSChildPaneSpecifier</string>
-		</dict>
-		<dict>
-			<key>File</key>
 			<string>com.mono0926.LicensePlist/Alamofire</string>
 			<key>Title</key>
 			<string>Alamofire (5.5.0)</string>
@@ -92,14 +84,6 @@
 		</dict>
 		<dict>
 			<key>File</key>
-			<string>com.mono0926.LicensePlist/Moya</string>
-			<key>Title</key>
-			<string>Moya (15.0.0)</string>
-			<key>Type</key>
-			<string>PSChildPaneSpecifier</string>
-		</dict>
-		<dict>
-			<key>File</key>
 			<string>com.mono0926.LicensePlist/QuickTableViewController</string>
 			<key>Title</key>
 			<string>QuickTableViewController (1.3.1)</string>
@@ -111,30 +95,6 @@
 			<string>com.mono0926.LicensePlist/RAMAnimatedTabBarController</string>
 			<key>Title</key>
 			<string>RAMAnimatedTabBarController (5.2.0)</string>
-			<key>Type</key>
-			<string>PSChildPaneSpecifier</string>
-		</dict>
-		<dict>
-			<key>File</key>
-			<string>com.mono0926.LicensePlist/RxCocoa</string>
-			<key>Title</key>
-			<string>RxCocoa (6.5.0)</string>
-			<key>Type</key>
-			<string>PSChildPaneSpecifier</string>
-		</dict>
-		<dict>
-			<key>File</key>
-			<string>com.mono0926.LicensePlist/RxRelay</string>
-			<key>Title</key>
-			<string>RxRelay (6.5.0)</string>
-			<key>Type</key>
-			<string>PSChildPaneSpecifier</string>
-		</dict>
-		<dict>
-			<key>File</key>
-			<string>com.mono0926.LicensePlist/RxSwift</string>
-			<key>Title</key>
-			<string>RxSwift (6.5.0)</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>
