@@ -16,6 +16,10 @@
 // settings
 "settings" = "设置";
 "languages" = "语言环境";
+"theme" = "主题";
+"system" = "系统默认设置";
+"light" = "浅色";
+"dark" = "深色";
 
 // mine url
 "mine_url" = "https://readme.gitterapp.com/?locale=zh_CN";

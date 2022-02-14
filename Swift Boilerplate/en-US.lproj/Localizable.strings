@@ -16,6 +16,10 @@
 // settings
 "settings" = "Settings";
 "languages" = "Languages";
+"theme" = "Theme";
+"system" = "Default";
+"light" = "Light";
+"dark" = "Dark";
 
 // mine url
 "mine_url" = "https://readme.gitterapp.com/?locale=en_US";

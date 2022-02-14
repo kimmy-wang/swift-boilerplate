@@ -31,8 +31,14 @@ class SettingsViewController: QuickTableViewController {
 //          ]),
 
           Section(title: "", rows: [
-            NavigationRow(text: languagesTitle, detailText: .value1(displayName.description), icon: .named("time"), action: openAppSetting()),
-          ])
+            NavigationRow(text: languagesTitle, detailText: .value1(displayName.description), icon: .named("time"), action: openAppSetting())
+          ]),
+
+          RadioSection(title: NSLocalizedString("theme", comment: ""), options: [
+            OptionRow(text: NSLocalizedString("system", comment: ""), isSelected: true, action: didToggleSelection()),
+            OptionRow(text: NSLocalizedString("light", comment: ""), isSelected: false, action: didToggleSelection()),
+            OptionRow(text: NSLocalizedString("dark", comment: ""), isSelected: false, action: didToggleSelection())
+         ])
         ]
     }
 
