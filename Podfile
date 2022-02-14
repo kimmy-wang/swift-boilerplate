@@ -11,7 +11,6 @@ target 'Swift Boilerplate' do
   pod 'AlamofireNetworkActivityIndicator', '~> 3.1.0'
   pod 'SwiftyJSON', '~> 4.3.0'
   pod 'RAMAnimatedTabBarController', '~> 5.2.0'
-  pod 'SkeletonView', '~> 1.29.2'
   pod 'LicensePlist', '~> 3.17.0'
   pod 'DeviceKit', '~> 4.5.2'
   pod 'Instructions', '~> 2.1.1'

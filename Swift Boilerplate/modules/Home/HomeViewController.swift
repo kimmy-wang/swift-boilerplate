@@ -7,7 +7,6 @@
 
 import UIKit
 import MBProgressHUD
-import SkeletonView
 import DGElasticPullToRefresh2
 import RAMAnimatedTabBarController
 
@@ -39,11 +38,6 @@ class HomeViewController: UIViewController {
         tableView.dg_removePullToRefresh()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        view.showAnimatedSkeleton()
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,7 +51,6 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
-        tableView.isSkeletonable = true
         tableView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
             self?.presenter?.updateView(pullToRefresh: true, loadMore: false)
         }, loadingView: loadingView)
@@ -83,7 +76,7 @@ class HomeViewController: UIViewController {
 }
 
 // MARK: - SkeletonTableViewDataSource
-extension HomeViewController: SkeletonTableViewDataSource {
+extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter?.getNewsListCount() ?? 0
     }
@@ -117,15 +110,6 @@ extension HomeViewController: SkeletonTableViewDataSource {
         cell?.setCell(title: title, author: author, description: description)
         return cell ?? UITableViewCell()
     }
-
-    func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
-        return "HomeTableViewCell"
-    }
-
-    func collectionSkeletonView(_ skeletonView: UITableView, skeletonCellForRowAt indexPath: IndexPath) -> UITableViewCell? {
-        let cell = skeletonView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as? HomeTableViewCell
-        return cell
-    }
 }
 
 // MARK: - UITableViewDelegate
@@ -142,7 +126,6 @@ extension HomeViewController: HomePresenterToViewProtocol {
                 tableView.dg_startLoading()
             } else {
                 MBProgressHUD.showAdded(to: self.view, animated: true)
-//                tableView.showAnimatedSkeleton(usingColor: .red)
             }
         }
     }
@@ -155,7 +138,6 @@ extension HomeViewController: HomePresenterToViewProtocol {
                 tableView.dg_stopLoading()
             } else {
                 MBProgressHUD.hide(for: self.view, animated: true)
-//                tableView.hideSkeleton()
             }
         }
         tableView.reloadData()
@@ -169,7 +151,6 @@ extension HomeViewController: HomePresenterToViewProtocol {
                 tableView.dg_stopLoading()
             } else {
                 MBProgressHUD.hide(for: self.view, animated: true)
-//                tableView.hideSkeleton()
             }
         }
         let alert = UIAlertController(title: "Alert", message: "Problem Fetching News", preferredStyle: UIAlertController.Style.alert)
