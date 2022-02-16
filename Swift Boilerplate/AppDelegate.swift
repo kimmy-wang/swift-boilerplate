@@ -6,31 +6,18 @@
 //
 
 import UIKit
-import AlamofireNetworkActivityIndicator
-import RAMAnimatedTabBarController
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        NetworkActivityIndicatorManager.shared.isEnabled = true
+        let window = UIWindow(frame: UIScreen.main.bounds)
 
-        let news = HomeRouter.createModule()
-        let mine = MineRouter.createModule()
+        Application.shared.configureMainInterface(in: window)
 
-        let newsNav = UINavigationController(rootViewController: news)
-        let mineNav = UINavigationController(rootViewController: mine)
-
-        let tabBarController = RAMAnimatedTabBarController()
-        tabBarController.viewControllers = [newsNav, mineNav]
-        tabBarController.delegate = self
-
-        // Override point for customization after application launch.
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = tabBarController
-        window?.makeKeyAndVisible()
+        self.window = window
         return true
     }
 

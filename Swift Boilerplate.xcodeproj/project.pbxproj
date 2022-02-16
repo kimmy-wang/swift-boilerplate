@@ -34,6 +34,7 @@
 		2E406B9827B4AA3B00C9C0AE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E406B9727B4AA3B00C9C0AE /* BaseViewController.swift */; };
 		2E9790FC27B6889200935E31 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E9790FB27B6889200935E31 /* iconfont.ttf */; };
 		2E9790FE27B68EBB00935E31 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9790FD27B68EBB00935E31 /* SettingsViewController.swift */; };
+		2E97915227BD227600935E31 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97915127BD227600935E31 /* Application.swift */; };
 		3898C4A58AE34C231C8B34ED /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3898C6F984641474F30FE787 /* .swiftlint.yml */; };
 		F6867E3B54B67CBDA3BE0C0E /* Pods_Swift_Boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2980AB7F0518A9CB22B5C36B /* Pods_Swift_Boilerplate.framework */; };
 /* End PBXBuildFile section */
@@ -78,9 +79,10 @@
 		2E3A2D4327B538B300855DDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2E406B9327B3B04300C9C0AE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2E406B9727B4AA3B00C9C0AE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		2E9790FB27B6889200935E31 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		2E9790FB27B6889200935E31 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = iconfont.ttf; sourceTree = "<group>"; };
 		2E9790FD27B68EBB00935E31 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2E97910027B7740B00935E31 /* Swift Boilerplate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift Boilerplate-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E97915127BD227600935E31 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		3898C6F984641474F30FE787 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		F8A4732D30293601A8271324 /* Pods-Swift Boilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Boilerplate.release.xcconfig"; path = "Target Support Files/Pods-Swift Boilerplate/Pods-Swift Boilerplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,10 +132,11 @@
 		2E3A2CC927A698E100855DDA /* Swift Boilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				2E97915027BD227600935E31 /* Application */,
 				2E406B9327B3B04300C9C0AE /* Settings.bundle */,
-				2E3A2D2C27AFA8DF00855DDA /* fonts */,
-				2E3A2D0D27A6AA6A00855DDA /* utils */,
-				2E3A2CDE27A69A2000855DDA /* modules */,
+				2E3A2D2C27AFA8DF00855DDA /* Fonts */,
+				2E3A2D0D27A6AA6A00855DDA /* Utils */,
+				2E3A2CDE27A69A2000855DDA /* Modules */,
 				2E3A2CCA27A698E100855DDA /* AppDelegate.swift */,
 				2E3A2CD027A698E100855DDA /* Main.storyboard */,
 				2E3A2CD327A698E300855DDA /* Assets.xcassets */,
@@ -145,14 +148,14 @@
 			path = "Swift Boilerplate";
 			sourceTree = "<group>";
 		};
-		2E3A2CDE27A69A2000855DDA /* modules */ = {
+		2E3A2CDE27A69A2000855DDA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				2E406B9527B4A9FF00C9C0AE /* Common */,
 				2E3A2D1527AF9B9C00855DDA /* Mine */,
 				2E3A2CDF27A69F8100855DDA /* Home */,
 			);
-			path = modules;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		2E3A2CDF27A69F8100855DDA /* Home */ = {
@@ -172,13 +175,13 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		2E3A2D0D27A6AA6A00855DDA /* utils */ = {
+		2E3A2D0D27A6AA6A00855DDA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				2E3A2D0E27A6AA8A00855DDA /* Constants.swift */,
 				2E3A2D2F27AFAC5A00855DDA /* UIFont+IconFont.swift */,
 			);
-			path = utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		2E3A2D1527AF9B9C00855DDA /* Mine */ = {
@@ -194,12 +197,12 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
-		2E3A2D2C27AFA8DF00855DDA /* fonts */ = {
+		2E3A2D2C27AFA8DF00855DDA /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				2E9790FB27B6889200935E31 /* iconfont.ttf */,
 			);
-			path = fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		2E406B9527B4A9FF00C9C0AE /* Common */ = {
@@ -208,6 +211,14 @@
 				2E406B9727B4AA3B00C9C0AE /* BaseViewController.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		2E97915027BD227600935E31 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2E97915127BD227600935E31 /* Application.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		A22BB8670E43E0589DF64E0F /* Pods */ = {
@@ -384,6 +395,7 @@
 				2E3A2CF427A6A1F300855DDA /* HomeProtocols.swift in Sources */,
 				2E3A2D1D27AF9D4000855DDA /* MineProtocols.swift in Sources */,
 				2E3A2CF827A6A2A000855DDA /* HomeResponse.swift in Sources */,
+				2E97915227BD227600935E31 /* Application.swift in Sources */,
 				2E3A2D2527AF9E4C00855DDA /* MineViewController.swift in Sources */,
 				2E3A2CCB27A698E100855DDA /* AppDelegate.swift in Sources */,
 				2E3A2D3027AFAC5A00855DDA /* UIFont+IconFont.swift in Sources */,
