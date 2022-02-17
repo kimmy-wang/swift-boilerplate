@@ -3,6 +3,10 @@ disabled_rules: # 执行时排除掉的规则
   - identifier_name
 included: # 执行 linting 时包含的路径。如果出现这个 `--path` 会被忽略。
   - Swift Boilerplate
+  - SBCommon
+  - SBFonts
+  - SBHome
+  - SBMine
 excluded: # 执行 linting 时忽略的路径。 优先级比 `included` 更高。
   - Carthage
   - Pods

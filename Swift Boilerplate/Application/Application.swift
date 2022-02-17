@@ -8,6 +8,8 @@
 import Foundation
 import AlamofireNetworkActivityIndicator
 import RAMAnimatedTabBarController
+import SBHome
+import SBMine
 
 final class Application {
 
@@ -18,14 +20,14 @@ final class Application {
     func configureMainInterface(in window: UIWindow) {
         NetworkActivityIndicatorManager.shared.isEnabled = true
 
-        let news = HomeRouter.createModule()
+        let home = HomeRouter.createModule()
         let mine = MineRouter.createModule()
 
-        let newsNav = UINavigationController(rootViewController: news)
+        let homeNav = UINavigationController(rootViewController: home)
         let mineNav = UINavigationController(rootViewController: mine)
 
         let tabBarController = RAMAnimatedTabBarController()
-        tabBarController.viewControllers = [newsNav, mineNav]
+        tabBarController.viewControllers = [homeNav, mineNav]
 
         window.rootViewController = tabBarController
     }

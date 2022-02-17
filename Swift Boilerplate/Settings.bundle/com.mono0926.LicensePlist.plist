@@ -28,25 +28,9 @@
 		</dict>
 		<dict>
 			<key>File</key>
-			<string>com.mono0926.LicensePlist/DeviceKit</string>
-			<key>Title</key>
-			<string>DeviceKit (4.5.2)</string>
-			<key>Type</key>
-			<string>PSChildPaneSpecifier</string>
-		</dict>
-		<dict>
-			<key>File</key>
 			<string>com.mono0926.LicensePlist/DGElasticPullToRefresh2</string>
 			<key>Title</key>
 			<string>DGElasticPullToRefresh2 (1.0.0)</string>
-			<key>Type</key>
-			<string>PSChildPaneSpecifier</string>
-		</dict>
-		<dict>
-			<key>File</key>
-			<string>com.mono0926.LicensePlist/Instructions</string>
-			<key>Title</key>
-			<string>Instructions (2.1.1)</string>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 		</dict>

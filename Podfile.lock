@@ -2,9 +2,7 @@ PODS:
   - Alamofire (5.5.0)
   - AlamofireNetworkActivityIndicator (3.1.0):
     - Alamofire (~> 5.1)
-  - DeviceKit (4.5.2)
   - DGElasticPullToRefresh2 (1.0.0)
-  - Instructions (2.1.1)
   - LicensePlist (3.17.0)
   - Localize-Swift (3.2.0):
     - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
@@ -23,9 +21,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.5.0)
   - AlamofireNetworkActivityIndicator (~> 3.1.0)
-  - DeviceKit (~> 4.5.2)
   - DGElasticPullToRefresh2
-  - Instructions (~> 2.1.1)
   - LicensePlist (~> 3.17.0)
   - Localize-Swift (~> 3.2.0)
   - lottie-ios (~> 3.2.3)
@@ -40,9 +36,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireNetworkActivityIndicator
-    - DeviceKit
     - DGElasticPullToRefresh2
-    - Instructions
     - LicensePlist
     - Localize-Swift
     - lottie-ios
@@ -56,9 +50,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   AlamofireNetworkActivityIndicator: 6564782bd7b9e6c430ae67d9277af01907b01ca4
-  DeviceKit: c622fc19f795f3e0b4d75d6d11b26604338cdab3
   DGElasticPullToRefresh2: 0e0159f7c34f72c2ebf246d611f459536a12a74a
-  Instructions: bde4a699f27e8e43d20efa3508e5bc53215d0879
   LicensePlist: f7eaf6d1d39746d49415ab30f104b734d5163519
   Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
@@ -69,6 +61,6 @@ SPEC CHECKSUMS:
   SwiftLint: 6bc52a21f0fd44cab9aa2dc8e534fb9f5e3ec507
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: e7f13c9cfa001f7b163c6ff51fd9edf4e4bdd9c2
+PODFILE CHECKSUM: 75a3669fa2d0865a9d530a954eb1fd6e0e6fb740
 
 COCOAPODS: 1.11.2
