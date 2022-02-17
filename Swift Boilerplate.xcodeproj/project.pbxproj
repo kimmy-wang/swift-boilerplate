@@ -185,7 +185,7 @@
 		1D296FE3F1DBADC91DB2EE7B /* Pods_SBMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2980AB7F0518A9CB22B5C36B /* Pods_Swift_Boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D96170F27C8BC75835B550 /* Pods_SBFonts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBFonts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E3A2CC727A698E100855DDA /* Swift Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3A2CC727A698E100855DDA /* SBMain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBMain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E3A2CCA27A698E100855DDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E3A2CD127A698E100855DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E3A2CD327A698E300855DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -222,7 +222,7 @@
 		2E406B9327B3B04300C9C0AE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2E9790FB27B6889200935E31 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		2E9790FD27B68EBB00935E31 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		2E97910027B7740B00935E31 /* Swift Boilerplate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift Boilerplate-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E97910027B7740B00935E31 /* SBMain-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBMain-Bridging-Header.h"; sourceTree = "<group>"; };
 		2E97915127BD227600935E31 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		2E97918827BD2ABF00935E31 /* SBMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E97918A27BD2ABF00935E31 /* SBMine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBMine.h; sourceTree = "<group>"; };
@@ -385,14 +385,14 @@
 				2EE6F20227BD2E3100386D99 /* SBHomeTests */,
 				2E97918927BD2ABF00935E31 /* SBMine */,
 				2E97919727BD2ABF00935E31 /* SBMineTests */,
-				2E3A2CC927A698E100855DDA /* Swift Boilerplate */,
+				2E3A2CC927A698E100855DDA /* SBMain */,
 			);
 			sourceTree = "<group>";
 		};
 		2E3A2CC827A698E100855DDA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E3A2CC727A698E100855DDA /* Swift Boilerplate.app */,
+				2E3A2CC727A698E100855DDA /* SBMain.app */,
 				2E97918827BD2ABF00935E31 /* SBMine.framework */,
 				2E97919127BD2ABF00935E31 /* SBMineTests.xctest */,
 				2EE6F1F327BD2E3100386D99 /* SBHome.framework */,
@@ -405,7 +405,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2E3A2CC927A698E100855DDA /* Swift Boilerplate */ = {
+		2E3A2CC927A698E100855DDA /* SBMain */ = {
 			isa = PBXGroup;
 			children = (
 				2E97915027BD227600935E31 /* Application */,
@@ -416,9 +416,9 @@
 				2E3A2CD527A698E300855DDA /* LaunchScreen.storyboard */,
 				2E3A2CD827A698E300855DDA /* Info.plist */,
 				2E3A2D3D27B5388F00855DDA /* Localizable.strings */,
-				2E97910027B7740B00935E31 /* Swift Boilerplate-Bridging-Header.h */,
+				2E97910027B7740B00935E31 /* SBMain-Bridging-Header.h */,
 			);
-			path = "Swift Boilerplate";
+			path = SBMain;
 			sourceTree = "<group>";
 		};
 		2E97915027BD227600935E31 /* Application */ = {
@@ -579,9 +579,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2E3A2CC627A698E100855DDA /* Swift Boilerplate */ = {
+		2E3A2CC627A698E100855DDA /* SBMain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E3A2CDB27A698E300855DDA /* Build configuration list for PBXNativeTarget "Swift Boilerplate" */;
+			buildConfigurationList = 2E3A2CDB27A698E300855DDA /* Build configuration list for PBXNativeTarget "SBMain" */;
 			buildPhases = (
 				64CE039729CE75975B7DFB70 /* [CP] Check Pods Manifest.lock */,
 				2E406B8E27B3AAD300C9C0AE /* LicensePlist */,
@@ -600,9 +600,9 @@
 				2EE6F22D27BD313000386D99 /* PBXTargetDependency */,
 				2EE6F25127BD32AD00386D99 /* PBXTargetDependency */,
 			);
-			name = "Swift Boilerplate";
+			name = SBMain;
 			productName = "Swift Boilerplate";
-			productReference = 2E3A2CC727A698E100855DDA /* Swift Boilerplate.app */;
+			productReference = 2E3A2CC727A698E100855DDA /* SBMain.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2E97918727BD2ABF00935E31 /* SBMine */ = {
@@ -820,7 +820,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E3A2CC627A698E100855DDA /* Swift Boilerplate */,
+				2E3A2CC627A698E100855DDA /* SBMain */,
 				2E97918727BD2ABF00935E31 /* SBMine */,
 				2E97919027BD2ABF00935E31 /* SBMineTests */,
 				2EE6F1F227BD2E3100386D99 /* SBHome */,
@@ -950,7 +950,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ $CONFIGURATION = \"Debug\" ]; then\n ${PODS_ROOT}/LicensePlist/license-plist --output-path Swift\\ Boilerplate/Settings.bundle --add-version-numbers\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ $CONFIGURATION = \"Debug\" ]; then\n ${PODS_ROOT}/LicensePlist/license-plist --output-path $PRODUCT_NAME/Settings.bundle --add-version-numbers\nfi\n";
 		};
 		2E90223107C5FBBF7F55AC1E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1265,7 +1265,7 @@
 		};
 		2E97919627BD2ABF00935E31 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E3A2CC627A698E100855DDA /* Swift Boilerplate */;
+			target = 2E3A2CC627A698E100855DDA /* SBMain */;
 			targetProxy = 2E97919527BD2ABF00935E31 /* PBXContainerItemProxy */;
 		};
 		2E97919C27BD2ABF00935E31 /* PBXTargetDependency */ = {
@@ -1280,7 +1280,7 @@
 		};
 		2EE6F20127BD2E3100386D99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E3A2CC627A698E100855DDA /* Swift Boilerplate */;
+			target = 2E3A2CC627A698E100855DDA /* SBMain */;
 			targetProxy = 2EE6F20027BD2E3100386D99 /* PBXContainerItemProxy */;
 		};
 		2EE6F20727BD2E3100386D99 /* PBXTargetDependency */ = {
@@ -1295,7 +1295,7 @@
 		};
 		2EE6F22727BD313000386D99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E3A2CC627A698E100855DDA /* Swift Boilerplate */;
+			target = 2E3A2CC627A698E100855DDA /* SBMain */;
 			targetProxy = 2EE6F22627BD313000386D99 /* PBXContainerItemProxy */;
 		};
 		2EE6F22D27BD313000386D99 /* PBXTargetDependency */ = {
@@ -1310,7 +1310,7 @@
 		};
 		2EE6F24B27BD32AD00386D99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2E3A2CC627A698E100855DDA /* Swift Boilerplate */;
+			target = 2E3A2CC627A698E100855DDA /* SBMain */;
 			targetProxy = 2EE6F24A27BD32AD00386D99 /* PBXContainerItemProxy */;
 		};
 		2EE6F25127BD32AD00386D99 /* PBXTargetDependency */ = {
@@ -1486,8 +1486,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 43V9N6VW8L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Swift Boilerplate/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Swift Boilerplate";
+				INFOPLIST_FILE = SBMain/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SBMain;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1503,7 +1503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.upcwangying.apps.sb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Swift Boilerplate/Swift Boilerplate-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SBMain/SBMain-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1522,8 +1522,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 43V9N6VW8L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Swift Boilerplate/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Swift Boilerplate";
+				INFOPLIST_FILE = SBMain/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SBMain;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1539,7 +1539,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.upcwangying.apps.sb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Swift Boilerplate/Swift Boilerplate-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SBMain/SBMain-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1975,7 +1975,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E3A2CDB27A698E300855DDA /* Build configuration list for PBXNativeTarget "Swift Boilerplate" */ = {
+		2E3A2CDB27A698E300855DDA /* Build configuration list for PBXNativeTarget "SBMain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E3A2CDC27A698E300855DDA /* Debug */,
