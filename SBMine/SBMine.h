@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MBProgressHUD/MBProgressHUD.h>
 
 //! Project version number for SBMine.
 FOUNDATION_EXPORT double SBMineVersionNumber;
