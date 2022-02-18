@@ -31,6 +31,10 @@ class HomePresenter: HomeViewToPresenterProtocol {
     func getNews(index: Int) -> BaseModel? {
         return interactor?.news?[index]
     }
+
+    func showNewsDetail(forNews news: BaseModel) {
+        router?.presentNewsDetailScreen(from: view!, forNews: news)
+    }
 }
 
 // MARK: - HomeInteractorToPresenterProtocol

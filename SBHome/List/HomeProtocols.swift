@@ -39,8 +39,11 @@ protocol HomeViewToPresenterProtocol: AnyObject {
     func getCount() -> Int?
     func getNewsListCount() -> Int?
     func getNews(index: Int) -> BaseModel?
+    func showNewsDetail(forNews: BaseModel)
 }
 
 protocol HomePresenterToRouterProtocol: AnyObject {
     static func createModule() -> UIViewController
+
+    func presentNewsDetailScreen(from view: HomePresenterToViewProtocol, forNews news: BaseModel)
 }

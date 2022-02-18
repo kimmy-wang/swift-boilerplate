@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SBCommon
 
 open class HomeRouter: HomePresenterToRouterProtocol {
 
@@ -31,5 +32,13 @@ open class HomeRouter: HomePresenterToRouterProtocol {
 
     static var mainstoryboard: UIStoryboard {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
+    }
+
+    func presentNewsDetailScreen(from view: HomePresenterToViewProtocol, forNews news: BaseModel) {
+        let newsDetailViewController = HomeNewsDetailRouter.createModule(forNews: news)
+   
+        if let sourceView = view as? UIViewController {
+           sourceView.navigationController?.pushViewController(newsDetailViewController, animated: false)
+        }
     }
 }

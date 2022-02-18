@@ -75,7 +75,7 @@ class HomeViewController: UIViewController {
 
 }
 
-// MARK: - SkeletonTableViewDataSource
+// MARK: - UITableViewDataSource
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter?.getNewsListCount() ?? 0
@@ -113,7 +113,12 @@ extension HomeViewController: UITableViewDataSource {
 }
 
 // MARK: - UITableViewDelegate
-extension HomeViewController: UITableViewDelegate {}
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let news = presenter?.getNews(index: indexPath.row)
+        presenter?.showNewsDetail(forNews: news!)
+    }
+}
 
 // MARK: - HomePresenterToViewProtocol
 extension HomeViewController: HomePresenterToViewProtocol {
