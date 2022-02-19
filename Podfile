@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Swift Boilerplate' do
+target 'SBMain' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
@@ -12,6 +12,9 @@ target 'Swift Boilerplate' do
   pod 'lottie-ios', '~> 3.2.3'
   pod 'SwiftLint'
 
+  target 'SBMainTests' do
+    inherit! :search_paths
+  end
 end
 
 target 'SBCommon' do
@@ -29,6 +32,17 @@ target 'SBFonts' do
   use_frameworks!
 
   target 'SBFontsTests' do
+    inherit! :search_paths
+  end
+
+end
+
+target 'SBTheme' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'SnapKit', '~> 5.0.1'
+
+  target 'SBThemeTests' do
     inherit! :search_paths
   end
 

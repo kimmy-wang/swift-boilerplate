@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Swift_BoilerplateVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Swift_BoilerplateVersionString[];
+FOUNDATION_EXPORT double Pods_SBMainVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SBMainVersionString[];
 

@@ -16,8 +16,9 @@
 // settings
 "settings" = "设置";
 "languages" = "语言环境";
+"dark_mode" = "外观";
 "theme" = "主题";
-"system" = "系统默认设置";
+"system" = "自动";
 "light" = "浅色";
 "dark" = "深色";
 

@@ -17,16 +17,20 @@ open class MineRouter: MinePresenterToRouterProtocol {
         let view = MineViewController()
 
         let presenter: MineViewToPresenterProtocol & MineInteractorToPresenterProtocol = MinePresenter()
-        let interactor: MinePresentorToInteractorProtocol = MineInteractor()
         let router: MinePresenterToRouterProtocol = MineRouter()
 
         view.presenter = presenter
         presenter.view = view
         presenter.router = router
-        presenter.interactor = interactor
-        interactor.presenter = presenter
 
         return view
+    }
+
+    func presentSettingsScreen(from view: MinePresenterToViewProtocol) {
+        let settingsViewController = SettingsRouter.createModule()
+        if let sourceView = view as? UIViewController {
+           sourceView.navigationController?.pushViewController(settingsViewController, animated: false)
+        }
     }
 
 }

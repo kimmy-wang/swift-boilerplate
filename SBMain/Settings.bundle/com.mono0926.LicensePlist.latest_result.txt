@@ -92,6 +92,10 @@ name: SnapKit, nameSpecified:
 body: Copyright (c) 2011-P…
 version: 5.0.1
 
+name: SnapKit, nameSpecified: 
+body: Copyright (c) 2011-P…
+version: 5.0.1
+
 name: SwiftLint, nameSpecified: 
 body: The MIT License (MIT…
 version: 0.46.2

@@ -9,6 +9,7 @@ import UIKit
 import SBFonts
 import WebKit
 import RAMAnimatedTabBarController
+import SBTheme
 
 class MineViewController: UIViewController {
 
@@ -27,6 +28,10 @@ class MineViewController: UIViewController {
         let scanningButtonItem = UIBarButtonItem(image: .icon(from: .scanning, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22), style: .plain, target: self, action: #selector(scanning))
         let settingsButtonItem = UIBarButtonItem(image: .icon(from: .settings, iconColor: .blue, imageSize: CGSize(width: 22, height: 22), ofSize: 22), style: .plain, target: self, action: #selector(openSettings))
         self.navigationItem.rightBarButtonItems = [scanningButtonItem, settingsButtonItem]
+
+        if #available(iOS 13.0, *) {
+            NotificationCenter.default.addObserver(self, selector: #selector(updateNightSwitch), name: NSNotification.Name(rawValue: ThemeUpdateNotification), object: nil)
+        }
     }
 
     required init?(coder: NSCoder) {
@@ -45,8 +50,6 @@ class MineViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         setupWebView()
-
-//        presenter?.updateView()
     }
 
     private func setupWebView() {
@@ -60,18 +63,22 @@ class MineViewController: UIViewController {
     }
 
     @objc func openSettings() {
-        self.navigationController?.pushViewController(SettingsViewController(), animated: false)
+        presenter?.showSettingsDetail()
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc private func updateNightSwitch(notification: Notification) {
+        //
+        print("updateNightSwitch")
+        if #available(iOS 13.0, *) {
+            guard let themeDict = notification.userInfo as? [String: UIUserInterfaceStyle] else {
+                return
+            }
+            let theme = themeDict["theme"]
+            self.overrideUserInterfaceStyle = theme ?? .unspecified
+        } else {
+            // Fallback on earlier versions
+        }
     }
-    */
 
 }
 
@@ -80,15 +87,4 @@ extension MineViewController: WKUIDelegate {
 }
 
 // MARK: - HomePresenterToViewProtocol
-extension MineViewController: MinePresenterToViewProtocol {
-
-    func showNews() {
-
-    }
-
-    func showError() {
-        let alert = UIAlertController(title: "Alert", message: "Problem Fetching News", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-    }
-}
+extension MineViewController: MinePresenterToViewProtocol {}

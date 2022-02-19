@@ -16,8 +16,9 @@
 // settings
 "settings" = "Settings";
 "languages" = "Languages";
+"dark_mode" = "Appearance";
 "theme" = "Theme";
-"system" = "Default";
+"system" = "Automatic";
 "light" = "Light";
 "dark" = "Dark";
 
