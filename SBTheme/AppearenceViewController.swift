@@ -9,15 +9,15 @@ import UIKit
 import SnapKit
 
 open class AppearenceViewController: UIViewController {
-    
+
     // MARK: - Properties
     var presenter: AppearenceViewToPresenterProtocol?
-    var tableView: UITableView?;
+    var tableView: UITableView?
     
     public init() {
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
@@ -33,13 +33,14 @@ open class AppearenceViewController: UIViewController {
         label.textColor = .red
         tableView?.backgroundColor = .red
         self.view.backgroundColor = .white
-//        self.view.addSubview(label)
-        self.view.addSubview(tableView!)
-        tableView!.snp.makeConstraints{ (make) -> Void in
-            make.left.equalToSuperview().offset(20)
-            make.right.equalToSuperview().offset(-20)
-            make.top.equalToSuperview().offset(20)
-        }
+        self.view.addSubview(label)
+//        self.view.addSubview(tableView!)
+        self.view.addSubview(SwitchNightCell(frame: CGRect(x: 100, y: 100, width: UIScreen.main.bounds.size.width, height: 64)))
+//        tableView!.snp.makeConstraints{ (make) -> Void in
+//            make.left.equalToSuperview().offset(20)
+//            make.right.equalToSuperview().offset(-20)
+//            make.top.equalToSuperview().offset(20)
+//        }
     }
 
 }

@@ -30,7 +30,7 @@ class MineViewController: UIViewController {
         self.navigationItem.rightBarButtonItems = [scanningButtonItem, settingsButtonItem]
 
         if #available(iOS 13.0, *) {
-            NotificationCenter.default.addObserver(self, selector: #selector(updateNightSwitch), name: NSNotification.Name(rawValue: ThemeUpdateNotification), object: nil)
+//            NotificationCenter.default.addObserver(self, selector: #selector(updateNightSwitch), name: NSNotification.Name(rawValue: ThemeUpdateNotification), object: nil)
         }
     }
 

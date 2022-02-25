@@ -16,6 +16,7 @@ PODS:
   - RAMAnimatedTabBarController (5.2.0)
   - SnapKit (5.0.1)
   - SwiftLint (0.46.2)
+  - SwiftTheme (0.6.4)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
@@ -30,6 +31,7 @@ DEPENDENCIES:
   - RAMAnimatedTabBarController (~> 5.2.0)
   - SnapKit (~> 5.0.1)
   - SwiftLint
+  - SwiftTheme (~> 0.6.4)
   - SwiftyJSON (~> 4.3.0)
 
 SPEC REPOS:
@@ -45,6 +47,7 @@ SPEC REPOS:
     - RAMAnimatedTabBarController
     - SnapKit
     - SwiftLint
+    - SwiftTheme
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -59,8 +62,9 @@ SPEC CHECKSUMS:
   RAMAnimatedTabBarController: 6863a386e7ae2ab227cd60aa73ab8ff56cdacfdd
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftLint: 6bc52a21f0fd44cab9aa2dc8e534fb9f5e3ec507
+  SwiftTheme: 007cbaf1f9e171caf6448a4657533e54c682b285
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 5394d8781372815833a6024496bb97adda6d85b5
+PODFILE CHECKSUM: 8eb35b7ad737bceb61f4d81c308d4bfeb1a53b82
 
 COCOAPODS: 1.11.2

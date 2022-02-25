@@ -59,7 +59,7 @@ class SettingsViewController: QuickTableViewController {
               return
           }
           if optionRow.isSelected {
-              NotificationCenter.default.post(name: Notification.Name(rawValue: ThemeUpdateNotification), object: nil, userInfo: ["theme": theme])
+//              NotificationCenter.default.post(name: Notification.Name(rawValue: ThemeUpdateNotification), object: nil, userInfo: ["theme": theme])
           }
       }
     }
