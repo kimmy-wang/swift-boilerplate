@@ -551,18 +551,6 @@
 			path = SBMain;
 			sourceTree = "<group>";
 		};
-		2E5D666427C89EB5003E65E9 /* List */ = {
-			isa = PBXGroup;
-			children = (
-				2E5D666927C89F59003E65E9 /* BaseCell.swift */,
-				2E5D666D27C89FCA003E65E9 /* SelectThemeCell.swift */,
-				2E5D667527C89FF5003E65E9 /* SwitchNightCell.swift */,
-				2EA906F527D362B10053AA10 /* SBAppearence.storyboard */,
-				2EDDAFD227D369BA00C7B251 /* SelectThemeViewController.swift */,
-			);
-			path = List;
-			sourceTree = "<group>";
-		};
 		2E97915027BD227600935E31 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -687,7 +675,11 @@
 		2EE6F29727BE873300386D99 /* SBTheme */ = {
 			isa = PBXGroup;
 			children = (
-				2E5D666427C89EB5003E65E9 /* List */,
+				2E5D666927C89F59003E65E9 /* BaseCell.swift */,
+				2E5D666D27C89FCA003E65E9 /* SelectThemeCell.swift */,
+				2E5D667527C89FF5003E65E9 /* SwitchNightCell.swift */,
+				2EA906F527D362B10053AA10 /* SBAppearence.storyboard */,
+				2EDDAFD227D369BA00C7B251 /* SelectThemeViewController.swift */,
 				2EE6F29827BE873300386D99 /* SBTheme.h */,
 				2E5D666027C89E10003E65E9 /* GlobalPicker.swift */,
 				2E5D666127C89E10003E65E9 /* MyThemes.swift */,
