@@ -17,17 +17,13 @@
 		2E3A2D1427A6BD9800855DDA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A2D1327A6BD9800855DDA /* .gitignore */; };
 		2E3A2D3B27B5388F00855DDA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E3A2D3D27B5388F00855DDA /* Localizable.strings */; };
 		2E406B9427B3B04300C9C0AE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E406B9327B3B04300C9C0AE /* Settings.bundle */; };
+		2E4B990B27C9DB17001FF345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E5D665E27C89D55003E65E9 /* Assets.xcassets */; };
 		2E5D665F27C89D55003E65E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E5D665E27C89D55003E65E9 /* Assets.xcassets */; };
 		2E5D666227C89E10003E65E9 /* GlobalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5D666027C89E10003E65E9 /* GlobalPicker.swift */; };
 		2E5D666327C89E10003E65E9 /* MyThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5D666127C89E10003E65E9 /* MyThemes.swift */; };
-		2E5D666727C89EC8003E65E9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5D666527C89EC8003E65E9 /* ListViewController.swift */; };
-		2E5D666827C89EC8003E65E9 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E5D666627C89EC8003E65E9 /* ListViewController.xib */; };
 		2E5D666A27C89F59003E65E9 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5D666927C89F59003E65E9 /* BaseCell.swift */; };
 		2E5D666F27C89FCA003E65E9 /* SelectThemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5D666D27C89FCA003E65E9 /* SelectThemeCell.swift */; };
-		2E5D667027C89FCA003E65E9 /* SelectThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E5D666E27C89FCA003E65E9 /* SelectThemeCell.xib */; };
 		2E5D667727C89FF5003E65E9 /* SwitchNightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5D667527C89FF5003E65E9 /* SwitchNightCell.swift */; };
-		2E5D667827C89FF5003E65E9 /* SwitchNightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E5D667627C89FF5003E65E9 /* SwitchNightCell.xib */; };
-		2E5D667A27C8B017003E65E9 /* AppearenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E5D667927C8B017003E65E9 /* AppearenceViewController.xib */; };
 		2E9790FC27B6889200935E31 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E9790FB27B6889200935E31 /* iconfont.ttf */; };
 		2E97915227BD227600935E31 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97915127BD227600935E31 /* Application.swift */; };
 		2E97918C27BD2ABF00935E31 /* SBMine.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2E97918B27BD2ABF00935E31 /* SBMine.docc */; };
@@ -41,6 +37,9 @@
 		2E9791A727BD2B9C00935E31 /* MinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2727AF9E6700855DDA /* MinePresenter.swift */; };
 		2E9791A827BD2B9C00935E31 /* MineProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D1C27AF9D4000855DDA /* MineProtocols.swift */; };
 		2E9791A927BD2B9C00935E31 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2327AF9E4C00855DDA /* MineViewController.swift */; };
+		2EA906F627D362B10053AA10 /* SBAppearence.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA906F527D362B10053AA10 /* SBAppearence.storyboard */; };
+		2EA906FB27D364D30053AA10 /* SBAppearence.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA906F527D362B10053AA10 /* SBAppearence.storyboard */; };
+		2EDDAFD327D369BA00C7B251 /* SelectThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDDAFD227D369BA00C7B251 /* SelectThemeViewController.swift */; };
 		2EE6F1F727BD2E3100386D99 /* SBHome.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2EE6F1F627BD2E3100386D99 /* SBHome.docc */; };
 		2EE6F1FD27BD2E3100386D99 /* SBHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE6F1F327BD2E3100386D99 /* SBHome.framework */; };
 		2EE6F20427BD2E3100386D99 /* SBHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE6F20327BD2E3100386D99 /* SBHomeTests.swift */; };
@@ -87,12 +86,9 @@
 		2EE6F2AB27BE873300386D99 /* SBTheme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE6F29627BE873300386D99 /* SBTheme.framework */; };
 		2EE6F2AC27BE873300386D99 /* SBTheme.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE6F29627BE873300386D99 /* SBTheme.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2EE6F2BE27BFE27400386D99 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE6F2BD27BFE27400386D99 /* SettingsViewController.xib */; };
-		2EE6F2C227C0946900386D99 /* AppearenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE6F2C127C0946900386D99 /* AppearenceViewController.swift */; };
 		2EE6F2C627C09E3600386D99 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE6F2C527C09E3600386D99 /* SettingsProtocols.swift */; };
 		2EE6F2C827C09E4900386D99 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE6F2C727C09E4900386D99 /* SettingsPresenter.swift */; };
 		2EE6F2CA27C09E5600386D99 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE6F2C927C09E5600386D99 /* SettingsRouter.swift */; };
-		2EE6F2CC27C0A58400386D99 /* AppearenceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE6F2CB27C0A58400386D99 /* AppearenceProtocols.swift */; };
-		2EE6F2CE27C0A5D600386D99 /* AppearencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE6F2CD27C0A5D600386D99 /* AppearencePresenter.swift */; };
 		2EE6F2D027C0A62100386D99 /* AppearenceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE6F2CF27C0A62100386D99 /* AppearenceRouter.swift */; };
 		3898C4A58AE34C231C8B34ED /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3898C6F984641474F30FE787 /* .swiftlint.yml */; };
 		47805C1E604C574208D8517D /* Pods_SBFonts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D96170F27C8BC75835B550 /* Pods_SBFonts.framework */; };
@@ -287,14 +283,9 @@
 		2E5D665E27C89D55003E65E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E5D666027C89E10003E65E9 /* GlobalPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalPicker.swift; sourceTree = "<group>"; };
 		2E5D666127C89E10003E65E9 /* MyThemes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyThemes.swift; sourceTree = "<group>"; };
-		2E5D666527C89EC8003E65E9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		2E5D666627C89EC8003E65E9 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		2E5D666927C89F59003E65E9 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		2E5D666D27C89FCA003E65E9 /* SelectThemeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectThemeCell.swift; sourceTree = "<group>"; };
-		2E5D666E27C89FCA003E65E9 /* SelectThemeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectThemeCell.xib; sourceTree = "<group>"; };
 		2E5D667527C89FF5003E65E9 /* SwitchNightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchNightCell.swift; sourceTree = "<group>"; };
-		2E5D667627C89FF5003E65E9 /* SwitchNightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchNightCell.xib; sourceTree = "<group>"; };
-		2E5D667927C8B017003E65E9 /* AppearenceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppearenceViewController.xib; sourceTree = "<group>"; };
 		2E9790FB27B6889200935E31 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		2E9790FD27B68EBB00935E31 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2E97910027B7740B00935E31 /* SBMain-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBMain-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -304,6 +295,8 @@
 		2E97918B27BD2ABF00935E31 /* SBMine.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SBMine.docc; sourceTree = "<group>"; };
 		2E97919127BD2ABF00935E31 /* SBMineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBMineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E97919827BD2ABF00935E31 /* SBMineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBMineTests.swift; sourceTree = "<group>"; };
+		2EA906F527D362B10053AA10 /* SBAppearence.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SBAppearence.storyboard; sourceTree = "<group>"; };
+		2EDDAFD227D369BA00C7B251 /* SelectThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectThemeViewController.swift; sourceTree = "<group>"; };
 		2EE6F1F327BD2E3100386D99 /* SBHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE6F1F527BD2E3100386D99 /* SBHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBHome.h; sourceTree = "<group>"; };
 		2EE6F1F627BD2E3100386D99 /* SBHome.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SBHome.docc; sourceTree = "<group>"; };
@@ -334,12 +327,9 @@
 		2EE6F29F27BE873300386D99 /* SBThemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBThemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE6F2A627BE873300386D99 /* SBThemeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBThemeTests.swift; sourceTree = "<group>"; };
 		2EE6F2BD27BFE27400386D99 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
-		2EE6F2C127C0946900386D99 /* AppearenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearenceViewController.swift; sourceTree = "<group>"; };
 		2EE6F2C527C09E3600386D99 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
 		2EE6F2C727C09E4900386D99 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 		2EE6F2C927C09E5600386D99 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
-		2EE6F2CB27C0A58400386D99 /* AppearenceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearenceProtocols.swift; sourceTree = "<group>"; };
-		2EE6F2CD27C0A5D600386D99 /* AppearencePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearencePresenter.swift; sourceTree = "<group>"; };
 		2EE6F2CF27C0A62100386D99 /* AppearenceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearenceRouter.swift; sourceTree = "<group>"; };
 		331C7AD426252E7B92C2FF28 /* Pods-SBThemeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBThemeTests.release.xcconfig"; path = "Target Support Files/Pods-SBThemeTests/Pods-SBThemeTests.release.xcconfig"; sourceTree = "<group>"; };
 		3898C6F984641474F30FE787 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
@@ -564,13 +554,11 @@
 		2E5D666427C89EB5003E65E9 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				2E5D666527C89EC8003E65E9 /* ListViewController.swift */,
-				2E5D666627C89EC8003E65E9 /* ListViewController.xib */,
 				2E5D666927C89F59003E65E9 /* BaseCell.swift */,
 				2E5D666D27C89FCA003E65E9 /* SelectThemeCell.swift */,
-				2E5D666E27C89FCA003E65E9 /* SelectThemeCell.xib */,
 				2E5D667527C89FF5003E65E9 /* SwitchNightCell.swift */,
-				2E5D667627C89FF5003E65E9 /* SwitchNightCell.xib */,
+				2EA906F527D362B10053AA10 /* SBAppearence.storyboard */,
+				2EDDAFD227D369BA00C7B251 /* SelectThemeViewController.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -704,10 +692,6 @@
 				2E5D666027C89E10003E65E9 /* GlobalPicker.swift */,
 				2E5D666127C89E10003E65E9 /* MyThemes.swift */,
 				2EE6F29927BE873300386D99 /* SBTheme.docc */,
-				2EE6F2C127C0946900386D99 /* AppearenceViewController.swift */,
-				2E5D667927C8B017003E65E9 /* AppearenceViewController.xib */,
-				2EE6F2CB27C0A58400386D99 /* AppearenceProtocols.swift */,
-				2EE6F2CD27C0A5D600386D99 /* AppearencePresenter.swift */,
 				2EE6F2CF27C0A62100386D99 /* AppearenceRouter.swift */,
 				2E5D665E27C89D55003E65E9 /* Assets.xcassets */,
 			);
@@ -1163,6 +1147,8 @@
 				2E3A2D1427A6BD9800855DDA /* .gitignore in Resources */,
 				2E406B9427B3B04300C9C0AE /* Settings.bundle in Resources */,
 				2E9790FC27B6889200935E31 /* iconfont.ttf in Resources */,
+				2EA906FB27D364D30053AA10 /* SBAppearence.storyboard in Resources */,
+				2E4B990B27C9DB17001FF345 /* Assets.xcassets in Resources */,
 				3898C4A58AE34C231C8B34ED /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1240,11 +1226,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E5D666827C89EC8003E65E9 /* ListViewController.xib in Resources */,
-				2E5D667A27C8B017003E65E9 /* AppearenceViewController.xib in Resources */,
-				2E5D667027C89FCA003E65E9 /* SelectThemeCell.xib in Resources */,
+				2EA906F627D362B10053AA10 /* SBAppearence.storyboard in Resources */,
 				2E5D665F27C89D55003E65E9 /* Assets.xcassets in Resources */,
-				2E5D667827C89FF5003E65E9 /* SwitchNightCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1688,15 +1671,12 @@
 			files = (
 				2E5D667727C89FF5003E65E9 /* SwitchNightCell.swift in Sources */,
 				2EE6F29A27BE873300386D99 /* SBTheme.docc in Sources */,
-				2EE6F2CC27C0A58400386D99 /* AppearenceProtocols.swift in Sources */,
 				2E5D666227C89E10003E65E9 /* GlobalPicker.swift in Sources */,
-				2EE6F2CE27C0A5D600386D99 /* AppearencePresenter.swift in Sources */,
 				2E5D666A27C89F59003E65E9 /* BaseCell.swift in Sources */,
 				2E5D666F27C89FCA003E65E9 /* SelectThemeCell.swift in Sources */,
+				2EDDAFD327D369BA00C7B251 /* SelectThemeViewController.swift in Sources */,
 				2E5D666327C89E10003E65E9 /* MyThemes.swift in Sources */,
 				2EE6F2D027C0A62100386D99 /* AppearenceRouter.swift in Sources */,
-				2E5D666727C89EC8003E65E9 /* ListViewController.swift in Sources */,
-				2EE6F2C227C0946900386D99 /* AppearenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

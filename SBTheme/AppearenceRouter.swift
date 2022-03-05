@@ -8,22 +8,17 @@
 import Foundation
 import UIKit
 
-open class AppearenceRouter: AppearencePresenterToRouterProtocol {
+open class AppearenceRouter {
 
     // MARK: - Methods
 
     open class func createModule() -> UIViewController {
 
-        let view = AppearenceViewController()
+        let storyboard = UIStoryboard.init(name: "SBAppearence", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "sb_appearence")
+        vc.title = "Appearence"
 
-        let presenter: AppearenceViewToPresenterProtocol & AppearenceInteractorToPresenterProtocol = AppearencePresenter()
-        let router: AppearencePresenterToRouterProtocol = AppearenceRouter()
-
-        view.presenter = presenter
-        presenter.view = view
-        presenter.router = router
-
-        return view
+        return vc
     }
 
 }
