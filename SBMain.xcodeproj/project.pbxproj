@@ -115,7 +115,7 @@
 			containerPortal = 2E3A2CBF27A698E100855DDA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2E3A2CC627A698E100855DDA;
-			remoteInfo = "Swift Boilerplate";
+			remoteInfo = "SBMain";
 		};
 		2E97919B27BD2ABF00935E31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -136,7 +136,7 @@
 			containerPortal = 2E3A2CBF27A698E100855DDA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2E3A2CC627A698E100855DDA;
-			remoteInfo = "Swift Boilerplate";
+			remoteInfo = "SBMain";
 		};
 		2EE6F20627BD2E3100386D99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -157,7 +157,7 @@
 			containerPortal = 2E3A2CBF27A698E100855DDA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2E3A2CC627A698E100855DDA;
-			remoteInfo = "Swift Boilerplate";
+			remoteInfo = "SBMain";
 		};
 		2EE6F22C27BD313000386D99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -178,7 +178,7 @@
 			containerPortal = 2E3A2CBF27A698E100855DDA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2E3A2CC627A698E100855DDA;
-			remoteInfo = "Swift Boilerplate";
+			remoteInfo = "SBMain";
 		};
 		2EE6F25027BD32AD00386D99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -240,7 +240,7 @@
 		0881126FD231C6AC588E2B41 /* Pods-SBHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBHome.release.xcconfig"; path = "Target Support Files/Pods-SBHome/Pods-SBHome.release.xcconfig"; sourceTree = "<group>"; };
 		08D466146B53FD4C50BA034B /* Pods-SBTheme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBTheme.debug.xcconfig"; path = "Target Support Files/Pods-SBTheme/Pods-SBTheme.debug.xcconfig"; sourceTree = "<group>"; };
 		125344CF09B843018F29896C /* Pods_SBCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		172603595871204A446D6E9F /* Pods-Swift Boilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Boilerplate.debug.xcconfig"; path = "Target Support Files/Pods-Swift Boilerplate/Pods-Swift Boilerplate.debug.xcconfig"; sourceTree = "<group>"; };
+		172603595871204A446D6E9F /* Pods-SBMain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBMain.debug.xcconfig"; path = "Target Support Files/Pods-SBMain/Pods-SBMain.debug.xcconfig"; sourceTree = "<group>"; };
 		1940A10007BEF16ACD3B985C /* Pods-SBThemeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBThemeTests.debug.xcconfig"; path = "Target Support Files/Pods-SBThemeTests/Pods-SBThemeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1A2CA00F23889BA369790717 /* Pods-SBMine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBMine.release.xcconfig"; path = "Target Support Files/Pods-SBMine/Pods-SBMine.release.xcconfig"; sourceTree = "<group>"; };
 		1AC6B5F508EE5D23E3F362E5 /* Pods_SBCommonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBCommonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -356,7 +356,7 @@
 		CB76634257695A454148BBE3 /* Pods-SBFonts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBFonts.release.xcconfig"; path = "Target Support Files/Pods-SBFonts/Pods-SBFonts.release.xcconfig"; sourceTree = "<group>"; };
 		D8B434D4367CD149A75DE46D /* Pods-SBMineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBMineTests.release.xcconfig"; path = "Target Support Files/Pods-SBMineTests/Pods-SBMineTests.release.xcconfig"; sourceTree = "<group>"; };
 		F845BC8886F247DD81069CC2 /* Pods-SBMineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBMineTests.debug.xcconfig"; path = "Target Support Files/Pods-SBMineTests/Pods-SBMineTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F8A4732D30293601A8271324 /* Pods-Swift Boilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Boilerplate.release.xcconfig"; path = "Target Support Files/Pods-Swift Boilerplate/Pods-Swift Boilerplate.release.xcconfig"; sourceTree = "<group>"; };
+		F8A4732D30293601A8271324 /* Pods-SBMain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBMain.release.xcconfig"; path = "Target Support Files/Pods-SBMain/Pods-SBMain.release.xcconfig"; sourceTree = "<group>"; };
 		FA4618131FAEC87345E62F06 /* Pods-SBFontsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBFontsTests.debug.xcconfig"; path = "Target Support Files/Pods-SBFontsTests/Pods-SBFontsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FAC378140588381B44F79B11 /* Pods-SBFonts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBFonts.debug.xcconfig"; path = "Target Support Files/Pods-SBFonts/Pods-SBFonts.debug.xcconfig"; sourceTree = "<group>"; };
 		FEA449B1A4B237C9030FDB0B /* Pods-SBHomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBHomeTests.debug.xcconfig"; path = "Target Support Files/Pods-SBHomeTests/Pods-SBHomeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -724,8 +724,8 @@
 		A22BB8670E43E0589DF64E0F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				172603595871204A446D6E9F /* Pods-Swift Boilerplate.debug.xcconfig */,
-				F8A4732D30293601A8271324 /* Pods-Swift Boilerplate.release.xcconfig */,
+				172603595871204A446D6E9F /* Pods-SBMain.debug.xcconfig */,
+				F8A4732D30293601A8271324 /* Pods-SBMain.release.xcconfig */,
 				B44C51C6D4FF86219E699DA9 /* Pods-SBHome.debug.xcconfig */,
 				0881126FD231C6AC588E2B41 /* Pods-SBHome.release.xcconfig */,
 				FEA449B1A4B237C9030FDB0B /* Pods-SBHomeTests.debug.xcconfig */,
@@ -823,7 +823,7 @@
 				2EE6F2AA27BE873300386D99 /* PBXTargetDependency */,
 			);
 			name = SBMain;
-			productName = "Swift Boilerplate";
+			productName = "SBMain";
 			productReference = 2E3A2CC727A698E100855DDA /* SBMain.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -1096,7 +1096,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2E3A2CC227A698E100855DDA /* Build configuration list for PBXProject "Swift Boilerplate" */;
+			buildConfigurationList = 2E3A2CC227A698E100855DDA /* Build configuration list for PBXProject "SBMain" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -2072,7 +2072,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Boilerplate.app/Swift Boilerplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBMain.app/SBMain";
 			};
 			name = Debug;
 		};
@@ -2092,7 +2092,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Boilerplate.app/Swift Boilerplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBMain.app/SBMain";
 			};
 			name = Release;
 		};
@@ -2176,7 +2176,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Boilerplate.app/Swift Boilerplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBMain.app/SBMain";
 			};
 			name = Debug;
 		};
@@ -2196,7 +2196,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Boilerplate.app/Swift Boilerplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBMain.app/SBMain";
 			};
 			name = Release;
 		};
@@ -2280,7 +2280,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Boilerplate.app/Swift Boilerplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBMain.app/SBMain";
 			};
 			name = Debug;
 		};
@@ -2300,7 +2300,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Boilerplate.app/Swift Boilerplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBMain.app/SBMain";
 			};
 			name = Release;
 		};
@@ -2384,7 +2384,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Boilerplate.app/Swift Boilerplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBMain.app/SBMain";
 			};
 			name = Debug;
 		};
@@ -2404,7 +2404,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Boilerplate.app/Swift Boilerplate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SBMain.app/SBMain";
 			};
 			name = Release;
 		};
@@ -2555,7 +2555,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E3A2CC227A698E100855DDA /* Build configuration list for PBXProject "Swift Boilerplate" */ = {
+		2E3A2CC227A698E100855DDA /* Build configuration list for PBXProject "SBMain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E3A2CD927A698E300855DDA /* Debug */,
