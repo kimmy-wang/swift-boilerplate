@@ -8,10 +8,10 @@
 import Foundation
 import SwiftTheme
 
-enum GlobalPicker {
-    static let backgroundColor: ThemeColorPicker = ["#fff", "#fff", "#fff", "#292b38"]
-    static let textColor: ThemeColorPicker = ["#000", "#000", "#000", "#ECF0F1"]
-    static let barTextColors = ["#FFF", "#000", "#FFF", "#FFF"]
-    static let barTextColor = ThemeColorPicker.pickerWithColors(barTextColors)
-    static let barTintColor: ThemeColorPicker = ["#EB4F38", "#F4C600", "#56ABE4", "#01040D"]
+public enum GlobalPicker {
+    public static let backgroundColor: ThemeColorPicker = ["#fff", "#fff", "#fff", "#292b38"]
+    public static let textColor: ThemeColorPicker = ["#000", "#000", "#000", "#ECF0F1"]
+    public static let barTextColors = ["#FFF", "#000", "#FFF", "#FFF"]
+    public static let barTextColor = ThemeColorPicker.pickerWithColors(barTextColors)
+    public static let barTintColor: ThemeColorPicker = ["#EB4F38", "#F4C600", "#56ABE4", "#01040D"]
 }
