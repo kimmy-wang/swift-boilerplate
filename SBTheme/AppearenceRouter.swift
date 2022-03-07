@@ -14,7 +14,7 @@ open class AppearenceRouter {
 
     open class func createModule() -> UIViewController {
 
-        let storyboard = UIStoryboard.init(name: "SBAppearence", bundle: nil)
+        let storyboard = UIStoryboard(name: "SBAppearence", bundle: Bundle(for: AppearenceRouter.self))
         let vc = storyboard.instantiateViewController(withIdentifier: "sb_appearence")
         vc.title = "Appearence"
 

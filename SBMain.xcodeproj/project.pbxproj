@@ -38,7 +38,6 @@
 		2E9791A827BD2B9C00935E31 /* MineProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D1C27AF9D4000855DDA /* MineProtocols.swift */; };
 		2E9791A927BD2B9C00935E31 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A2D2327AF9E4C00855DDA /* MineViewController.swift */; };
 		2EA906F627D362B10053AA10 /* SBAppearence.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA906F527D362B10053AA10 /* SBAppearence.storyboard */; };
-		2EA906FB27D364D30053AA10 /* SBAppearence.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA906F527D362B10053AA10 /* SBAppearence.storyboard */; };
 		2EDDAFD327D369BA00C7B251 /* SelectThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDDAFD227D369BA00C7B251 /* SelectThemeViewController.swift */; };
 		2EE6F1F727BD2E3100386D99 /* SBHome.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2EE6F1F627BD2E3100386D99 /* SBHome.docc */; };
 		2EE6F1FD27BD2E3100386D99 /* SBHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE6F1F327BD2E3100386D99 /* SBHome.framework */; };
@@ -115,7 +114,7 @@
 			containerPortal = 2E3A2CBF27A698E100855DDA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2E3A2CC627A698E100855DDA;
-			remoteInfo = "SBMain";
+			remoteInfo = SBMain;
 		};
 		2E97919B27BD2ABF00935E31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -136,7 +135,7 @@
 			containerPortal = 2E3A2CBF27A698E100855DDA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2E3A2CC627A698E100855DDA;
-			remoteInfo = "SBMain";
+			remoteInfo = SBMain;
 		};
 		2EE6F20627BD2E3100386D99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -157,7 +156,7 @@
 			containerPortal = 2E3A2CBF27A698E100855DDA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2E3A2CC627A698E100855DDA;
-			remoteInfo = "SBMain";
+			remoteInfo = SBMain;
 		};
 		2EE6F22C27BD313000386D99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -178,7 +177,7 @@
 			containerPortal = 2E3A2CBF27A698E100855DDA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2E3A2CC627A698E100855DDA;
-			remoteInfo = "SBMain";
+			remoteInfo = SBMain;
 		};
 		2EE6F25027BD32AD00386D99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -823,7 +822,7 @@
 				2EE6F2AA27BE873300386D99 /* PBXTargetDependency */,
 			);
 			name = SBMain;
-			productName = "SBMain";
+			productName = SBMain;
 			productReference = 2E3A2CC727A698E100855DDA /* SBMain.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -1139,7 +1138,6 @@
 				2E3A2D1427A6BD9800855DDA /* .gitignore in Resources */,
 				2E406B9427B3B04300C9C0AE /* Settings.bundle in Resources */,
 				2E9790FC27B6889200935E31 /* iconfont.ttf in Resources */,
-				2EA906FB27D364D30053AA10 /* SBAppearence.storyboard in Resources */,
 				2E4B990B27C9DB17001FF345 /* Assets.xcassets in Resources */,
 				3898C4A58AE34C231C8B34ED /* .swiftlint.yml in Resources */,
 			);
