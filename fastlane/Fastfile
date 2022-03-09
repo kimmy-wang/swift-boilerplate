@@ -1,0 +1,50 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+import "Utils/Keychain.rb"
+import "Utils/Git.rb"
+import "Utils/Slack.rb"
+import "Utils/Env.rb"
+import "Lanes/Release.rb"
+import "Lanes/Testflight.rb"
+
+platform :ios do
+
+  # Release
+  lane :release do | params |
+
+    begin
+
+      if !params[:bump]
+        puts "No bump type defined! Use one of: patch | minor | major".red
+        UI.user_error!("No bump type defined! Use one of: patch | minor | major".red)
+      end
+
+      private_release bump: params[:bump]
+
+    rescue => exception
+      on_error(exception)
+    end
+
+  end
+
+  # Beta
+  lane :beta do
+    private_beta
+  end
+
+end
