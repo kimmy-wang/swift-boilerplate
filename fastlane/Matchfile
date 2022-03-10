@@ -1,4 +1,4 @@
-git_url("git@upcwangying.github.com:see/swift-boilerplate-fastlane.git")
+git_url("https://github.com/see/swift-boilerplate-fastlane")
 
 storage_mode("git")
 
