@@ -34,6 +34,7 @@ private_lane :private_beta do
     # Make IPA
     gym(
       configuration: "Release",
+      workspace: "#{APP_NAME}.xcworkspace",
       scheme: SCHEME,
       export_method: "app-store",
       export_options: {
