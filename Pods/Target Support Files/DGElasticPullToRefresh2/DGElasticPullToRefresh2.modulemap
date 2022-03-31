@@ -1,6 +1,0 @@
-framework module DGElasticPullToRefresh2 {
-  umbrella header "DGElasticPullToRefresh2-umbrella.h"
-
-  export *
-  module * { export * }
-}

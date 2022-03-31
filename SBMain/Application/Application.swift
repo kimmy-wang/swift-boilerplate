@@ -8,8 +8,6 @@
 import Foundation
 import AlamofireNetworkActivityIndicator
 import RAMAnimatedTabBarController
-import SBHome
-import SBMine
 
 final class Application {
 

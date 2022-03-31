@@ -1,0 +1,6 @@
+framework module KMYElasticPullToRefresh {
+  umbrella header "KMYElasticPullToRefresh-umbrella.h"
+
+  export *
+  module * { export * }
+}

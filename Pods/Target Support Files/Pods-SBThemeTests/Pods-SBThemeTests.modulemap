@@ -1,6 +1,0 @@
-framework module Pods_SBThemeTests {
-  umbrella header "Pods-SBThemeTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SBTheme
+import SwiftTheme
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

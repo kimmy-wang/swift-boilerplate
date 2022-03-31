@@ -1,6 +1,0 @@
-framework module Pods_SBFontsTests {
-  umbrella header "Pods-SBFontsTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
