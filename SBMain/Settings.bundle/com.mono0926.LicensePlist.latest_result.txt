@@ -1,6 +1,6 @@
 name: Alamofire, nameSpecified: 
 body: Copyright (c) 2014-2…
-version: 5.5.0
+version: 5.6.4
 
 name: AlamofireNetworkActivityIndicator, nameSpecified: 
 body: Copyright (c) 2016 A…
@@ -14,7 +14,7 @@ name: LicensePlist, nameSpecified:
 body: MIT License
 
 Copyrig…
-version: 3.17.0
+version: 3.23.4
 
 name: Localize-Swift, nameSpecified: 
 body: Copyright (c) 2015 R…
@@ -38,7 +38,7 @@ version: 5.2.0
 
 name: SnapKit, nameSpecified: 
 body: Copyright (c) 2011-P…
-version: 5.0.1
+version: 5.6.0
 
 name: SwiftLint, nameSpecified: 
 body: The MIT License (MIT…
@@ -50,8 +50,8 @@ version: 0.6.4
 
 name: SwiftyJSON, nameSpecified: 
 body: The MIT License (MIT…
-version: 4.3.0
+version: 5.0.1
 
 add-version-numbers: true
 
-LicensePlist Version: 3.17.0
+LicensePlist Version: 3.23.4
