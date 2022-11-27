@@ -10,7 +10,7 @@ target 'SBMain' do
   pod 'RAMAnimatedTabBarController', '~> 5.2.0'
   pod 'LicensePlist', '~> 3.23.0'
   pod 'lottie-ios', '~> 3.2.3'
-  pod 'SnapKit', '~> 5.0.1'
+  pod 'SnapKit', '~> 5.6.0'
   pod 'Alamofire', '~> 5.6.0'
   pod 'SwiftyJSON', '~> 4.3.0'
   pod 'RAMAnimatedTabBarController', '~> 5.2.0'
