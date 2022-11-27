@@ -3,7 +3,7 @@ PODS:
   - AlamofireNetworkActivityIndicator (3.1.0):
     - Alamofire (~> 5.1)
   - KMYElasticPullToRefresh (1.0.0)
-  - LicensePlist (3.17.0)
+  - LicensePlist (3.23.4)
   - Localize-Swift (3.2.0):
     - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
     - Localize-Swift/UIKit (= 3.2.0)
@@ -23,7 +23,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.6.0)
   - AlamofireNetworkActivityIndicator (~> 3.1.0)
   - KMYElasticPullToRefresh (~> 1.0.0)
-  - LicensePlist (~> 3.17.0)
+  - LicensePlist (~> 3.23.0)
   - Localize-Swift (~> 3.2.0)
   - lottie-ios (~> 3.2.3)
   - MBProgressHUD (~> 1.2.0)
@@ -54,7 +54,7 @@ SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   AlamofireNetworkActivityIndicator: 6564782bd7b9e6c430ae67d9277af01907b01ca4
   KMYElasticPullToRefresh: 1dc575ea2d9bcc4cdab5c42441edd5baa1ea9aa3
-  LicensePlist: f7eaf6d1d39746d49415ab30f104b734d5163519
+  LicensePlist: 804d60431859ef6ee6b2aa2dd0eb2c09d0418edd
   Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
@@ -65,6 +65,6 @@ SPEC CHECKSUMS:
   SwiftTheme: 007cbaf1f9e171caf6448a4657533e54c682b285
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 08db89a1ca26c63c6bdc9b42035dc839e5c0ee94
+PODFILE CHECKSUM: a657217c383203a6c4eefb2a37a688f19ba50cbd
 
 COCOAPODS: 1.11.2
