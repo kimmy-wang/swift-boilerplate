@@ -14,7 +14,7 @@ PODS:
   - MBProgressHUD (1.2.0)
   - QuickTableViewController (1.3.1)
   - RAMAnimatedTabBarController (5.2.0)
-  - SnapKit (5.0.1)
+  - SnapKit (5.6.0)
   - SwiftLint (0.46.2)
   - SwiftTheme (0.6.4)
   - SwiftyJSON (4.3.0)
@@ -29,7 +29,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 1.2.0)
   - QuickTableViewController (~> 1.3.1)
   - RAMAnimatedTabBarController (~> 5.2.0)
-  - SnapKit (~> 5.0.1)
+  - SnapKit (~> 5.6.0)
   - SwiftLint
   - SwiftTheme (~> 0.6.4)
   - SwiftyJSON (~> 4.3.0)
@@ -60,11 +60,11 @@ SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   QuickTableViewController: 25e698de1546c2b829c543d91b64ebc6e884acfc
   RAMAnimatedTabBarController: 6863a386e7ae2ab227cd60aa73ab8ff56cdacfdd
-  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftLint: 6bc52a21f0fd44cab9aa2dc8e534fb9f5e3ec507
   SwiftTheme: 007cbaf1f9e171caf6448a4657533e54c682b285
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: a657217c383203a6c4eefb2a37a688f19ba50cbd
+PODFILE CHECKSUM: 8aaf7620fdd35ea4b48adf901a447a1bc5a05587
 
 COCOAPODS: 1.11.2
