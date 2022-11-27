@@ -17,7 +17,7 @@ PODS:
   - SnapKit (5.6.0)
   - SwiftLint (0.46.2)
   - SwiftTheme (0.6.4)
-  - SwiftyJSON (4.3.0)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.6.0)
@@ -32,7 +32,7 @@ DEPENDENCIES:
   - SnapKit (~> 5.6.0)
   - SwiftLint
   - SwiftTheme (~> 0.6.4)
-  - SwiftyJSON (~> 4.3.0)
+  - SwiftyJSON (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
@@ -63,8 +63,8 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftLint: 6bc52a21f0fd44cab9aa2dc8e534fb9f5e3ec507
   SwiftTheme: 007cbaf1f9e171caf6448a4657533e54c682b285
-  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 8aaf7620fdd35ea4b48adf901a447a1bc5a05587
+PODFILE CHECKSUM: 274225ce581a9690598dfb33ebf5f983ce0bc96a
 
 COCOAPODS: 1.11.2

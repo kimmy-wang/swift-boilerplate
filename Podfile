@@ -12,7 +12,7 @@ target 'SBMain' do
   pod 'lottie-ios', '~> 3.2.3'
   pod 'SnapKit', '~> 5.6.0'
   pod 'Alamofire', '~> 5.6.0'
-  pod 'SwiftyJSON', '~> 4.3.0'
+  pod 'SwiftyJSON', '~> 5.0.0'
   pod 'RAMAnimatedTabBarController', '~> 5.2.0'
   pod 'QuickTableViewController', '~> 1.3.1'
   pod 'MBProgressHUD', '~> 1.2.0'
