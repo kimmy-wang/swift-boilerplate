@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.5.0)
+  - Alamofire (5.6.4)
   - AlamofireNetworkActivityIndicator (3.1.0):
     - Alamofire (~> 5.1)
   - KMYElasticPullToRefresh (1.0.0)
@@ -20,7 +20,7 @@ PODS:
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.5.0)
+  - Alamofire (~> 5.6.0)
   - AlamofireNetworkActivityIndicator (~> 3.1.0)
   - KMYElasticPullToRefresh (~> 1.0.0)
   - LicensePlist (~> 3.17.0)
@@ -51,7 +51,7 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   AlamofireNetworkActivityIndicator: 6564782bd7b9e6c430ae67d9277af01907b01ca4
   KMYElasticPullToRefresh: 1dc575ea2d9bcc4cdab5c42441edd5baa1ea9aa3
   LicensePlist: f7eaf6d1d39746d49415ab30f104b734d5163519
@@ -65,6 +65,6 @@ SPEC CHECKSUMS:
   SwiftTheme: 007cbaf1f9e171caf6448a4657533e54c682b285
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: dcddccbc12c2eadb7693cfc9ecc975101bc64989
+PODFILE CHECKSUM: 08db89a1ca26c63c6bdc9b42035dc839e5c0ee94
 
 COCOAPODS: 1.11.2
