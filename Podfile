@@ -11,7 +11,7 @@ target 'SBMain' do
   pod 'LicensePlist', '~> 3.17.0'
   pod 'lottie-ios', '~> 3.2.3'
   pod 'SnapKit', '~> 5.0.1'
-  pod 'Alamofire', '~> 5.5.0'
+  pod 'Alamofire', '~> 5.6.0'
   pod 'SwiftyJSON', '~> 4.3.0'
   pod 'RAMAnimatedTabBarController', '~> 5.2.0'
   pod 'QuickTableViewController', '~> 1.3.1'
